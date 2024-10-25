@@ -42,7 +42,7 @@ In this exercise, we will be creating the Host pool using **Quickstart** using m
 
    **C. Domain administrator credentials:**
    
-   - Domain admin user name: *Paste your username* **<inject key="AzureAdUserEmail" />**
+   - Domain admin user name: *Paste your username* **<inject key="User 01 UPN" />**
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />**
    - **Click** on **Next : Virtual Machines >**.
 
