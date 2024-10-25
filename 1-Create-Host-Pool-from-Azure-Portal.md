@@ -37,7 +37,7 @@ In this exercise, we will be creating the Host pool using **Quickstart** using m
    
    **B. Azure user credentials:**
    
-   - Azure admin user name: *Paste your username* **<inject key="AzureAdUserEmail" />**
+   - Azure admin user name: *Paste your username* **<inject key="User 01 UPN" />**
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />**
 
    **C. Domain administrator credentials:**
