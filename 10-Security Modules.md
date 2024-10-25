@@ -12,7 +12,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
 1. In your JumpVM launch browser and visit `https://AKA.ms/proofup` and if asked to log in then log in using the following credentials:
 
-   - Username: **<inject key="AzureAdUserEmail" />**
+   - Username: **<inject key="User 01 UPN" />**
    - Password: **<inject key="AzureAdUserPassword" />**
    
 2. If there is pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.  
@@ -122,7 +122,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
 10. Now to log in, enter the lab credentials as mentioned below:
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
      ![ws name.](media/95.png)
 
@@ -176,7 +176,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
 1. Enter the user credentials to access the workspace.
 
-    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+    - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
       ![ws name.](media/95.png)
 

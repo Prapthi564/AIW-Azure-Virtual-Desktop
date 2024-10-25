@@ -46,7 +46,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
   
 1. Enter your **credentials** to access the workspace.
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
    ![ws name.](media/95.png)
 
@@ -96,7 +96,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    ![ws name.](media/w1.png)
 
-1. Click on **User** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" />** in the search bar and click on your user to open it.
+1. Click on **User** under *Manage* blade, then paste **<inject key="User 01 UPN" />** in the search bar and click on your user to open it.
 
    ![ws name.](media/AVD-users.png)
 

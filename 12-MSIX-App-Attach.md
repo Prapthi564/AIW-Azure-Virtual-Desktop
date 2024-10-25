@@ -49,7 +49,7 @@ Refer to this link ``https://docs.microsoft.com/en-us/azure/virtual-desktop/what
 
       - Click on **+ Select members (2)**
       
-      - Select: Search and select **<inject key="AzureAdUserEmail" />** user **(3)**.
+      - Select: Search and select **<inject key="User 01 UPN" />** user **(3)**.
 
       - Click on **Select (4)**
    
@@ -250,7 +250,7 @@ Refer to this link ``https://docs.microsoft.com/en-us/azure/virtual-desktop/what
   
 1. Enter your **credentials** to access the workspace.
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
    ![ws name.](media/95.png)
 

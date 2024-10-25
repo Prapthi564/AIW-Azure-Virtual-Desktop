@@ -44,7 +44,7 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
 
    ![ws name.](media/avdv235.png)
    
-1. Once the Desktop is loaded as shown in the below screenshot. In the Welcome to Microsoft Teams pane, click on Continue as **<inject key="AzureAdUserEmail" />**.
+1. Once the Desktop is loaded as shown in the below screenshot. In the Welcome to Microsoft Teams pane, click on Continue as **<inject key="User 01 UPN" />**.
 
    ![ws name.](./media/teamsopen.png)
    

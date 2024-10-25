@@ -125,7 +125,7 @@ In this task, you will through the process to understand the creation of a custo
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: *Paste the username*  **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
+   - Username: *Paste the username*  **<inject key="User 01 UPN" />** *then click on* **Next**.
 
      ![ws name.](media/95.png)
    

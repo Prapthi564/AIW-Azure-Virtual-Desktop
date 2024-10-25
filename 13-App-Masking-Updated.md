@@ -135,7 +135,7 @@ In this task, you will download the pre-created rule sets into the session host 
   
 1. Enter your **credentials** to access the workspace.
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
    ![ws name.](media/95.png)
 

@@ -28,7 +28,7 @@
    
 1. Now, you will see two tabs in the Edge browser, close the first tab named **Microsoft Edge**.
 
-3. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
+3. Login to Azure with the username **<inject key="User 01 UPN" />** and click on **Next**.
 
    ![](media/w24.png)
 

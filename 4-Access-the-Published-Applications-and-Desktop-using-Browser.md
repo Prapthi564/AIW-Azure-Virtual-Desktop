@@ -26,7 +26,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. To login, enter the lab credentials below:
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: *Paste your username* **<inject key="User 01 UPN" />** *and then click on **Next**.*
    
    ![ws name.](media/95.png)
 
@@ -48,7 +48,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Enter the lab credentials to access the application and click on **Submit**.
 
-   - Username: **<inject key="AzureAdUserEmail" />** 
+   - Username: **<inject key="User 01 UPN" />** 
   
    - Password: **<inject key="AzureAdUserPassword" />**
 
@@ -63,7 +63,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
    > - Select the two AVD VMs and then click on the **RESTART** button from the top ribbon menu.
    > - After a minute or two; once the AVD Session host VMs are restarted; try the step again.
 
-1. Enter username **<inject key="AzureAdUserEmail" />** on *Activate Office* window and click on **Next**.
+1. Enter username **<inject key="User 01 UPN" />** on *Activate Office* window and click on **Next**.
 
    ![ws name.](media/ch6.png)
 
@@ -105,7 +105,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Enter the lab credentials to access the application and click on **Submit**.
 
-   - Username: **<inject key="AzureAdUserEmail" />** 
+   - Username: **<inject key="User 01 UPN" />** 
   
    - Password: **<inject key="AzureAdUserPassword" />**
 
@@ -121,7 +121,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    ![ws name.](media/w1.png)
 
-1. Click on **Users** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" />** in the search bar and click on your user to open it.
+1. Click on **Users** under *Manage* blade, then paste **<inject key="User 01 UPN" />** in the search bar and click on your user to open it.
 
    ![ws name.](media/AVD-users.png)
 

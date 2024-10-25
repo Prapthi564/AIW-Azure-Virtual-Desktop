@@ -128,7 +128,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
    ![ws name.](media-1/Ex6-task2-step6.png)
    
-1. Search and select username **<inject key="AzureAdUserEmail" /> (1)** and click on **Select (2)**.
+1. Search and select username **<inject key="User 01 UPN" /> (1)** and click on **Select (2)**.
 
    ![ws name.](media-1/L6E2S7.png)
    
@@ -376,7 +376,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     ![ws name.](media/w1.png)
      
-17. Click on **Users**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user.
+17. Click on **Users**, then in the search bar paste your username **<inject key="User 01 UPN" />** and then click on your user.
 
     ![ws name.](media/AVD-users.png)
     
@@ -388,7 +388,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     ![ws name.](media/a73.png)
 
-    >**Note:** This will log off the user **<inject key="AzureAdUserEmail" />** from both the session hosts, so that when the user signs in again to the session hosts, FSLogix will start functioning.
+    >**Note:** This will log off the user **<inject key="User 01 UPN" />** from both the session hosts, so that when the user signs in again to the session hosts, FSLogix will start functioning.
         
 20. Now paste the below-mentioned link in your browser in the JumpVM, and enter your **credentials** to log in.
 
@@ -396,7 +396,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
     aka.ms/wvdarmweb
     ```  
 
-    - Username: Paste username **<inject key="AzureAdUserEmail" />**, then click on **Next**.
+    - Username: Paste username **<inject key="User 01 UPN" />**, then click on **Next**.
    
     ![ws name.](media/w24.png)
 
@@ -418,7 +418,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
 23. Enter your **Credentials** to access the desktop.
 
-    - Username: **<inject key="AzureAdUserEmail" />**
+    - Username: **<inject key="User 01 UPN" />**
     - Password: **<inject key="AzureAdUserPassword" />**
 
     ![ws name.](media/lab4-2.png)

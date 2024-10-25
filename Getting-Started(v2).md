@@ -50,7 +50,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    
 1. Now, you will see two tabs in the Edge browser, close the first tab named **Microsoft Edge**.
 
-1. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
+1. Login to Azure with the username **<inject key="User 01 UPN" />** and click on **Next**.
 
    ![](media/w24.png)
 

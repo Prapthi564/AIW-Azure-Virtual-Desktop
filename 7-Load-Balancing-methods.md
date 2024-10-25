@@ -97,7 +97,7 @@ Here, we will use Powershell to run a script that will change the passwords for 
    ```
 3. Your browser window will open and you will be prompted to authenticate to your Azure.
 
-4. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
+4. Login to Azure with the username **<inject key="User 01 UPN" />** and click on **Next**.
     
     ![](media/lab7-avd2.png)
     
