@@ -45,7 +45,7 @@ In this exercise, We'll be reviewing monitoring data of the AVD environment usin
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** then click on **Next**.*
+   - Username: *Paste the username*  **<inject key="User 01 UPN" />** then click on **Next**.*
    - Password: *Paste the* **<inject key="AVD User Password" />** *and click on* **OK**.* 
    
    ![ws name.](media/lb37.png)
