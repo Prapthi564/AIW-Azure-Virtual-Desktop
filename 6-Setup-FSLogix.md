@@ -38,7 +38,7 @@ In the following task, we will be creating a storage account with a file share w
    
    - At last, click on **Next**
    
-   ![ws name.](media/lab6-1.png)
+      ![ws name.](media/lab6-1.png)
    
 4. On the _Advanced_ tab, leave it to default and click on the **Next: Networking >** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next: Networking >** button.
 
@@ -48,14 +48,14 @@ In the following task, we will be creating a storage account with a file share w
 
    - Network access: **Enable public access from selected virtual networks and IP addresses (1)**
      
-   >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
+      >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
    - Virtual network subscription: Leave it to ***default (2)***.
    - Virtual Network: **aadds-vnet (3)**
    - Subnets: **sessionhost-subnet (10.0.1.0/24) (4)**
    - Leave the rest to default settings.
    - Click on **Review + create(5)**.
      
-   ![ws name.](media/lab6-3.png)
+      ![ws name.](media/lab6-3.png)
      
 6. Click on **Create**.
 
@@ -93,9 +93,9 @@ In the following task, we will be creating a storage account with a file share w
     - Tier: **Transaction Optimized**
     - Click on **Review + create**, and then **Create** this will create the file share.
     
-    ![ws name.](media/lab6-4.png)
+      ![ws name.](media/lab6-4.png)
 
-    ![ws name.](media/lab6-5.png)
+      ![ws name.](media/lab6-5.png)
 
 ## Exercise 2: Configure File Share
 
@@ -118,7 +118,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    - Group name: **permission-fslogixcontainer**
    - Click on **Create**.
 
-   ![ws name.](media/2avd38.png)
+      ![ws name.](media/2avd38.png)
    
 1. Click on **permission - fslogixcontainer** group to open.
 
@@ -148,10 +148,10 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
      ![ws name.](media/role%20assignemnt-v2.png)
    
-   >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
-   > - *Storage File Data SMB Share Reader* allows read access in Azure Storage file shares over SMB.
-   > - *Storage File Data SMB Share Contributor* allows read, write, and delete access in Azure Storage file shares over SMB.
-   > - *Storage File Data SMB Share Elevated Contributor* allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
+      >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
+      > - *Storage File Data SMB Share Reader* allows read access in Azure Storage file shares over SMB.
+      > - *Storage File Data SMB Share Contributor* allows read, write, and delete access in Azure Storage file shares over SMB.
+      > - *Storage File Data SMB Share Elevated Contributor* allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
    
    - Under the **Members** tab, follow the below steps:
 
@@ -200,64 +200,64 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
    
 6. **Copy** the script given below and paste it by using **Ctrl + V** in the Powershell window. 
 
->**Note** : **Do not** run the script right away.
+   >**Note** : **Do not** run the script right away.
 
 
-```
- #Variables
-$storageAccountName = "NameofStorageAccount" 
+      ```
+      #Variables
+      $storageAccountName = "NameofStorageAccount" 
 
-#Create Directories
-$LabFilesDirectory = "C:\LabFiles"
+      #Create Directories
+      $LabFilesDirectory = "C:\LabFiles"
 
-if(!(Test-path -Path "$LabFilesDirectory")){
-New-Item -Path $LabFilesDirectory -ItemType Directory |Out-Null
-}
-if(!(Test-path -Path "$LabFilesDirectory\FSLogix")){
-New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
-}
+      if(!(Test-path -Path "$LabFilesDirectory")){
+      New-Item -Path $LabFilesDirectory -ItemType Directory |Out-Null
+      }
+      if(!(Test-path -Path "$LabFilesDirectory\FSLogix")){
+      New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
+      }
 
- #Download FSLogix Installation bundle
+      #Download FSLogix Installation bundle
 
- if(!(Test-path -Path "$LabFilesDirectory\FSLogix_Apps_Installation.zip")){
-       Invoke-WebRequest -Uri "https://avdv2.blob.core.windows.net/blob/FSLogix_Apps_Installation.zip" -OutFile     "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
+      if(!(Test-path -Path "$LabFilesDirectory\FSLogix_Apps_Installation.zip")){
+            Invoke-WebRequest -Uri "https://avdv2.blob.core.windows.net/blob/FSLogix_Apps_Installation.zip" -OutFile     "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
 
- #Extract the downloaded FSLogix bundle
- function Expand-ZIPFile($file, $destination){
-     $shell = new-object -com shell.application
-     $zip = $shell.NameSpace($file)
-     foreach($item in $zip.items()){
-     $shell.Namespace($destination).copyhere($item)
-     }
- }
+      #Extract the downloaded FSLogix bundle
+      function Expand-ZIPFile($file, $destination){
+         $shell = new-object -com shell.application
+         $zip = $shell.NameSpace($file)
+         foreach($item in $zip.items()){
+         $shell.Namespace($destination).copyhere($item)
+         }
+      }
 
- Expand-ZIPFile -File "$LabFilesDirectory\FSLogix_Apps_Installation.zip" -Destination "$LabFilesDirectory\FSLogix"
+      Expand-ZIPFile -File "$LabFilesDirectory\FSLogix_Apps_Installation.zip" -Destination "$LabFilesDirectory\FSLogix"
 
-}
-   #Install FSLogix
-   if(!(Get-WmiObject -Class Win32_Product | where vendor -eq "FSLogix, Inc." | select Name, Version)){
-       $pathvargs = {C:\LabFiles\FSLogix\x64\Release\FSLogixAppsSetup.exe /quiet /install }
-       Invoke-Command -ScriptBlock $pathvargs
-   }
-   #Create registry key 'Profiles' under 'HKLM:\SOFTWARE\FSLogix'
-   $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
-   if(!(Test-path $registryPath)){
-       New-Item -Path $registryPath -Force | Out-Null
-   }
+      }
+         #Install FSLogix
+         if(!(Get-WmiObject -Class Win32_Product | where vendor -eq "FSLogix, Inc." | select Name, Version)){
+            $pathvargs = {C:\LabFiles\FSLogix\x64\Release\FSLogixAppsSetup.exe /quiet /install }
+            Invoke-Command -ScriptBlock $pathvargs
+         }
+         #Create registry key 'Profiles' under 'HKLM:\SOFTWARE\FSLogix'
+         $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
+         if(!(Test-path $registryPath)){
+            New-Item -Path $registryPath -Force | Out-Null
+         }
 
-   #Add registry values to enable FSLogix profiles, add VHD Locations, Delete local profile and FlipFlop Directory name
-   New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\$storageAccountName.file.core.windows.net\userprofile" -PropertyType String -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWord -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWord -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "FlipFlopProfileDirectoryName" -Value 1 -PropertyType DWord -Force | Out-Null
+         #Add registry values to enable FSLogix profiles, add VHD Locations, Delete local profile and FlipFlop Directory name
+         New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\$storageAccountName.file.core.windows.net\userprofile" -PropertyType String -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWord -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWord -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "FlipFlopProfileDirectoryName" -Value 1 -PropertyType DWord -Force | Out-Null
 
-   #Display script completion in the console
-   Write-Host "Script Executed successfully"
-```
+         #Display script completion in the console
+         Write-Host "Script Executed successfully"
+      ```
  
  
  
-   ![ws name.](media/uiupdate12.png)
+      ![ws name.](media/uiupdate12.png)
    
    >**Note:** The above script will :
    >
@@ -290,74 +290,74 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
         
 12. **Copy** the script given below and paste it by using **Ctrl + V** in the Powershell window. 
 
->**Note :** **Do Not** run the script right away.
+      >**Note :** **Do Not** run the script right away.
 
 
 
-```
- #Variables
-$storageAccountName = "NameofStorageAccount" 
+      ```
+      #Variables
+      $storageAccountName = "NameofStorageAccount" 
 
-#Create Directories
-$LabFilesDirectory = "C:\LabFiles"
+      #Create Directories
+      $LabFilesDirectory = "C:\LabFiles"
 
-if(!(Test-path -Path "$LabFilesDirectory")){
-New-Item -Path $LabFilesDirectory -ItemType Directory |Out-Null
-}
-if(!(Test-path -Path "$LabFilesDirectory\FSLogix")){
-New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
-}
+      if(!(Test-path -Path "$LabFilesDirectory")){
+      New-Item -Path $LabFilesDirectory -ItemType Directory |Out-Null
+      }
+      if(!(Test-path -Path "$LabFilesDirectory\FSLogix")){
+      New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
+      }
 
- #Download FSLogix Installation bundle
+      #Download FSLogix Installation bundle
 
- if(!(Test-path -Path "$LabFilesDirectory\FSLogix_Apps_Installation.zip")){
-       Invoke-WebRequest -Uri "https://avdv2.blob.core.windows.net/blob/FSLogix_Apps_Installation.zip" -OutFile     "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
+      if(!(Test-path -Path "$LabFilesDirectory\FSLogix_Apps_Installation.zip")){
+            Invoke-WebRequest -Uri "https://avdv2.blob.core.windows.net/blob/FSLogix_Apps_Installation.zip" -OutFile     "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
 
- #Extract the downloaded FSLogix bundle
- function Expand-ZIPFile($file, $destination){
-     $shell = new-object -com shell.application
-     $zip = $shell.NameSpace($file)
-     foreach($item in $zip.items()){
-     $shell.Namespace($destination).copyhere($item)
-     }
- }
+      #Extract the downloaded FSLogix bundle
+      function Expand-ZIPFile($file, $destination){
+         $shell = new-object -com shell.application
+         $zip = $shell.NameSpace($file)
+         foreach($item in $zip.items()){
+         $shell.Namespace($destination).copyhere($item)
+         }
+      }
 
- Expand-ZIPFile -File "$LabFilesDirectory\FSLogix_Apps_Installation.zip" -Destination "$LabFilesDirectory\FSLogix"
+      Expand-ZIPFile -File "$LabFilesDirectory\FSLogix_Apps_Installation.zip" -Destination "$LabFilesDirectory\FSLogix"
 
-}
-   #Install FSLogix
-   if(!(Get-WmiObject -Class Win32_Product | where vendor -eq "FSLogix, Inc." | select Name, Version)){
-       $pathvargs = {C:\LabFiles\FSLogix\x64\Release\FSLogixAppsSetup.exe /quiet /install }
-       Invoke-Command -ScriptBlock $pathvargs
-   }
-   #Create registry key 'Profiles' under 'HKLM:\SOFTWARE\FSLogix'
-   $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
-   if(!(Test-path $registryPath)){
-       New-Item -Path $registryPath -Force | Out-Null
-   }
+      }
+         #Install FSLogix
+         if(!(Get-WmiObject -Class Win32_Product | where vendor -eq "FSLogix, Inc." | select Name, Version)){
+            $pathvargs = {C:\LabFiles\FSLogix\x64\Release\FSLogixAppsSetup.exe /quiet /install }
+            Invoke-Command -ScriptBlock $pathvargs
+         }
+         #Create registry key 'Profiles' under 'HKLM:\SOFTWARE\FSLogix'
+         $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
+         if(!(Test-path $registryPath)){
+            New-Item -Path $registryPath -Force | Out-Null
+         }
 
-   #Add registry values to enable FSLogix profiles, add VHD Locations, Delete local profile and FlipFlop Directory name
-   New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\$storageAccountName.file.core.windows.net\userprofile" -PropertyType String -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWord -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWord -Force | Out-Null
-   New-ItemProperty -Path $registryPath -Name "FlipFlopProfileDirectoryName" -Value 1 -PropertyType DWord -Force | Out-Null
+         #Add registry values to enable FSLogix profiles, add VHD Locations, Delete local profile and FlipFlop Directory name
+         New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\$storageAccountName.file.core.windows.net\userprofile" -PropertyType String -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWord -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWord -Force | Out-Null
+         New-ItemProperty -Path $registryPath -Name "FlipFlopProfileDirectoryName" -Value 1 -PropertyType DWord -Force | Out-Null
 
-   #Display script completion in the console
-   Write-Host "Script Executed successfully"
-```
+         #Display script completion in the console
+         Write-Host "Script Executed successfully"
+      ```
 
 
 
-   ![ws name.](media/uiupdate12.png)
+      ![ws name.](media/uiupdate12.png)
    
     
-   > **Note:** The above script will :
-   >
-   > i) Install FSLogix Profile Container application
-   > 
-   > ii) Configure the required registries
-   > 
-   >iii) Set the profile container location to the Azure file share location we created.
+      > **Note:** The above script will :
+      >
+      > i) Install FSLogix Profile Container application
+      > 
+      > ii) Configure the required registries
+      > 
+      >iii) Set the profile container location to the Azure file share location we created.
  
 
 13. In line 2, we have to replace the name of the storage account with the **"NameofStorageAccount"** block.
@@ -398,15 +398,15 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     - Username: Paste username **<inject key="User 01 UPN" />**, then click on **Next**.
    
-    ![ws name.](media/w24.png)
+      ![ws name.](media/w24.png)
 
     - Password: Paste password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-    ![ws name.](media/w25.png)
+      ![ws name.](media/w25.png)
 
-    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
+      >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
     
-     ![](media/login.png)
+      ![](media/login.png)
 
 21. Click on the **Session Desktop** Desktop to launch it.
 
@@ -421,7 +421,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
     - Username: **<inject key="User 01 UPN" />**
     - Password: **<inject key="AzureAdUserPassword" />**
 
-    ![ws name.](media/lab4-2.png)
+      ![ws name.](media/lab4-2.png)
         
 24. The desktop display will look similar to the screenshot below, showing ***Please wait for the FSLogix Apps Services***.
 

@@ -59,7 +59,7 @@ An application group of type ‘Desktop’, was created automatically while crea
       - Application Group Name: **AVD-AG-01**
       - Click on **Next: Applications >**
 
-      ![ws name.](media-2/createapplicationgroup.png)
+         ![ws name.](media-2/createapplicationgroup.png)
 
 1. On the *Applications* tab, click on **+ Add Applications** to add applications to this application group.
 
@@ -72,7 +72,7 @@ An application group of type ‘Desktop’, was created automatically while crea
     - Display Name: **Excel**
     - Leave the rest of the parameters as default and click on **Review + Add** and then **Add**.
    
-    ![ws name.](media-1/L3E1S12.png)
+      ![ws name.](media-1/L3E1S12.png)
  
 1. Click on **+ Add Applications** again. 
 
@@ -85,7 +85,7 @@ An application group of type ‘Desktop’, was created automatically while crea
     - Display Name: **Word**    
     - Leave the rest of the parameters to default and click on **Review + Add** and then **Add**. 
    
-   ![ws name.](media-1/L3E1S14.png)
+      ![ws name.](media-1/L3E1S14.png)
 
 1. Click on **Next: Assignments >**.
 
@@ -105,7 +105,7 @@ An application group of type ‘Desktop’, was created automatically while crea
     - Register application Group: Leave the value to default
     - Click on **Review + Create**.
 
-   ![ws name.](media/lab3-4.png)
+      ![ws name.](media/lab3-4.png)
 
 1. The last window helps us to verify if the parameters we filled in are correct. Wait for validation to pass, then click on **Create** to initiate the deployment. 
 
