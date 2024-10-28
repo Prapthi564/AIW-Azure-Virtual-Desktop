@@ -158,6 +158,13 @@ In this task, you will through the process to understand the creation of a custo
 1. Return to the Azure portal and click on **refresh** **(1)** to get the updated status of Virtual Machines. Here, we can see the session hosts VM in the **Running** state and has started automatically when the session desktop was launched.
 
    ![](media/2avd117.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="5f4fcb3f-951c-43a8-9261-b4d78e2e297d" />   
    
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
