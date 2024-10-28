@@ -81,6 +81,13 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 1. Once done, the users assigned to the Application group will look similar to the image given below.
 
     ![ws name.](media-2/avdusers.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="6766e50d-ab21-479c-82d4-1536050c9745" />   
      
 ## Exercise 2: Update Passwords for the new users
 
@@ -127,6 +134,13 @@ Here, we will use Powershell to run a script that will change the passwords for 
    ![ws name.](media/lab7-avd4.png)
 
    >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="238e92b5-93b0-4f35-a441-10c4befa350b" />   
 
 ## Exercise 3: Change and experience Load Balancing methods
 
