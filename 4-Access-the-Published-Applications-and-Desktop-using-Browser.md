@@ -10,11 +10,13 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 ## Exercise 1: Access the Published Application
 
-1.  Navigate to Azure portal, then search for *Host pools* in search bar and select **Host pools** from the suggestions.
+1.  Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
 
-1. Navigate to **GS-AVD-HP**, then go to **Properties** under ***Settings*** blade. Under the **Preferred app group type**, choose **RemoteApp** and click **Save**.
+    ![ws name.](media/avd-9.png)
 
-   ![ws name.](media/1.1.png)
+1. Navigate to **GS-AVD-HP**, then go to **Properties (1)** under ***Settings*** blade. Under the **Preferred app group type**, choose **RemoteApp (2)** and click **Save (3)**.
+
+    ![ws name.](media/avd-39.png)
 
 1. Open the following URL in a new browser tab in the JumpVM. This URL will lead us to the Remote Desktop Web Client.
 
@@ -89,7 +91,9 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 ## Exercise 2: Access the published Desktop
 
-1.  Navigate to Azure portal, then search for *Host pools* in search bar and select **Host pools** from the suggestions.
+1.  Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
+
+    ![ws name.](media/avd-9.png)
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties**. Under the **Preferred app group type**, choose **Desktop** and click **Save**.
    
@@ -121,17 +125,17 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    ![ws name.](media/w1.png)
 
-1. Click on **Users** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" />** in the search bar and click on your user to open it.
+1. Click on **Users (1)** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
 
-   ![ws name.](media/AVD-users.png)
+    ![ws name.](media/avd-12.png)
 
 1. Click on the **Sessions (1)** tab, select both Host pools by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
-   ![ws name.](media-2/session.png)
+    ![ws name.](media-2/avd-10.png)
 
 1. Click on **OK** to *Sign out user from VMs*.
 
-   ![ws name.](media/jvm9.png)
+    ![ws name.](media/avd-11.png)
 
 1. Click on the **Refresh** button and make sure no results are displayed under the Host pool.
 

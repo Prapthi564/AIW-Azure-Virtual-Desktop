@@ -36,7 +36,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
    - Display Name: **AVDUser01 (2)**
    - Click on **Review + Create (3)** and then click on **Create.**
 
-   ![ws name.](media-1/avd-l7-ex1-s4.png)
+   ![ws name.](media-1/avd-28.png)
 
 1. Click on **+ New user** and select **Create new user** to add one more user, then add the following configurations under *Basics* tab and leave the rest to default.
 
@@ -44,7 +44,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
    - Display Name: **AVDUser02 (2)**
    - Click on **Review + Create (3)** and then click on **Create.***
    
-   ![ws name.](media-1/avd-l7-ex1-s5.png)
+   ![ws name.](media-1/avd-29.png)
 
 1. Both the newly created users will show up similarly as shown below. Copy the **user principal name** of both users and paste it into a text editor so that we can use it further.
 
@@ -52,19 +52,19 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 1. Click on **AVDUser01** to open it. Then click on **Groups** **(1)** and select **+ Add memberships** **(2)**.
 
-   ![ws name.](media-1/lab7-ex1-s7.png)
+   ![ws name.](media-1/avd-30.png)
 
 1. Click on the **permission - fslogixcontainer (1)** group and then click on **Select (2)**.
 
-   ![ws name.](media-1/L7E1S8.png)
+   ![ws name.](media-1/avd-31.png)
 
 1. Click on **AVDUser02** to open it. Then click on **Groups** **(1)** and select **+ Add memberships** **(2)**.
 
-   ![ws name.](media-1/lab7-ex1-s9.png)
+   ![ws name.](media-1/avd-32.png)
 
 1. Click on the **permission - fslogixcontainer (1)** group and then click on **Select (2)**.
 
-   ![ws name.](media-1/L7E1S8.png)
+   ![ws name.](media-1/avd-31.png)
 
 1. Navigate to the *host pool* **GS-AVD-HP** and open **Application groups** present under *Manage* blade. Two application groups will be listed there.
 
@@ -131,7 +131,7 @@ Here, we will use Powershell to run a script that will change the passwords for 
  
 7. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
 
-   ![ws name.](media/lab7-avd4.png)
+   ![ws name.](media/avd-33.png)
 
    >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
@@ -258,11 +258,11 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
 1. Open the **AVD-HP01-SH-0....** session host and click on **Users (1)**, you can see the user logged in to that session host. Now select the user **(2)** and click on the **sign out users (3)** button and select **Sign out (4)** to the prompt asking *This will Sign out selected users from session host AVD-HP01-SH-0*.
 
-    ![ws name.](media-1/Ex7-task3-step18.png)
+    ![ws name.](media-1/avd-34.png)
 
 1. Navigate back to *Session hosts* and open **AVD-HP01-SH-1...** session host, click on **Users (1)** and you can see the user logged in to that session host. Now select the user **(2)** and click on the **Sign out users (3)** button and select **Sign out (4)** to the prompt asking *This will Sign out selected users from session host AVD-HP01-SH-1*.
 
-    ![ws name.](media-2/log1.1.png)
+    ![ws name.](media-2/avd-35.png)
 
      >**Note:** We need to log off the users from session hosts so that when users log in again, the connection is made based on the *Depth-first load balancing method*.
   
