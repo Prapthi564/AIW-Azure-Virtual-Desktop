@@ -24,27 +24,27 @@ In this exercise, we will be creating the Host pool using **Quickstart** using m
 
    **A. Project Details:**
 
-   - Subscription: **Leave it as default**
-   - Identity provider: Select ***Existing active directory***
-   - Identity service type: Select ***Microsoft Entra Domain Services*** from the drop-down
-   - Resource Group prefix: Enter ***AVD-HostPool-RG***
-   - Region: Select **<inject key="Region" enableCopy="false"/>** from the drop-down list.
+   - Subscription: **Leave it as default (1)**
+   - Identity provider: Select ***Existing active directory (2)***
+   - Identity service type: Select ***Microsoft Entra Domain Services (3)*** from the drop-down
+   - Resource Group prefix: Enter ***AVD-HostPool-RG (4)***
+   - Region: Select **<inject key="Region" enableCopy="false"/> (5)** from the drop-down list.
 
       >**Note**: The region you selected in the lab might be different from the region mentioned in the screenshot.
       
-   - Virtual Network: **aadds-vnet** *(choose from dropdown)*
-   - Subnet: **sessionhosts-subnet(10.0.1.0/24)** *(choose from dropdown)*
+   - Virtual Network: **aadds-vnet (6)** *(choose from dropdown)*
+   - Subnet: **sessionhosts-subnet(10.0.1.0/24) (7)** *(choose from dropdown)*
    
    **B. Azure user credentials:**
    
-   - Azure admin user name: *Paste your username* **<inject key="AzureAdUserEmail" />**
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" />**
+   - Azure admin user name: *Paste your username* **<inject key="AzureAdUserEmail" /> (8)**
+   - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (9)**
 
    **C. Domain administrator credentials:**
    
-   - Domain admin user name: *Paste your username* **<inject key="AzureAdUserEmail" />**
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" />**
-   - **Click** on **Next : Virtual Machines >**.
+   - Domain admin user name: *Paste your username* **<inject key="AzureAdUserEmail" /> (10)**
+   - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (11)**
+   - **Click** on **Next : Virtual Machines > (12)**.
 
    ![ws name.](media-1/L1E1S3.png)
    
