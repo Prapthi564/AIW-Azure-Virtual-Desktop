@@ -100,11 +100,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    ![ws name.](media/AVD-users.png)
 
-1. Click on the **Sessions (1)** tab, select both Host pools by clicking on the checkbox **(2)** and then click on the **Log off (3)** button.
+1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
    ![ws name.](media-2/hplogoff.png)
 
-1. Click on **OK** to *Log off user from VMs*.
+1. Click on **OK** to *Sign out user from VMs*.
 
    ![ws name.](media/jvm9.png)
 

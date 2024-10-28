@@ -25,17 +25,17 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 
 1. Now add the following configurations:
 
-   - Subscription: Leave it to ***default***
+   - Subscription: Leave it to ***default (1)***
   
-   - Resource group: *Select **AVD-Hostpool-RG-avd** from the drop-down.*
+   - Resource group: *Select **AVD-Hostpool-RG-avd (2)** from the drop-down.*
   
-   - Name: **<inject key="Log Analytics Workspace Name	" />**
+   - Name: **<inject key="Log Analytics Workspace Name	" /> (3)**
   
-   - Region: Select **<inject key="Region" enableCopy="false"/>** from the drop-down list
+   - Region: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list
   
-   - Click on **Review + Create**
+   - Click on **Review + Create (5)**
 
-   ![ws name.](media-1/Ex2-task1-step4.png)
+   ![ws name.](media-1/avd2.png)
 
 1. The last window helps us to verify if the parameters we filled are correct. Wait for validation to pass, then click on **Create** to initiate the deployment.
 
@@ -56,14 +56,14 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 
    ![ws name.](media-2/Lab2(a)-ex2-step2.png)
    
-1. On the **Insights** page, select the following values and click on **GS-AVD-HP** under overview.
+1. On the **Insights** page, select the following values and click on **GS-AVD-HP (5)** under overview.
    
-   - Subscription: **Choose the default subscription**
-   - Resource group: **avd-hostpool-rg-avd**
-   - Host Pool: **GS-AVD-HP**
-   - Time range: **Leave it to default**
+   - Subscription: **Choose the default subscription (1)**
+   - Resource group: **avd-hostpool-rg-avd (2)**
+   - Host Pool: **GS-AVD-HP (3)**
+   - Time range: **Leave it to default (4)**
 
-   ![ws name.](media-2/Lab2(a)-ex2-step3.png)
+   ![ws name.](media-2/avd-3.png)
    
 1. On the **GS-AVD-HP | Insights** hostpool page, click on **Open Configuration Workbook**. 
 
@@ -80,11 +80,11 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 
    >**Note**: Sometimes, monitoring for the host pool gets configured automatically. Please **re-configure** monitoring for the host pool as a few components might not be configured.
 
-    ![ws name.](media/lab2-4.png)
+    ![ws name.](media/avd-4.png)
    
 1. On the **Deploy template** page, the diagnostic settings for the host pool are automated using a template. Look through the categories select and click on **deploy**.
 
-   ![ws name.](media/lab2-5.png)
+   ![ws name.](media/avd-5.png)
    
 1. Once the deployment is successful, **Refresh** the **Check Configuration** page. You'll be able to see the settings applied to the host pool.
 

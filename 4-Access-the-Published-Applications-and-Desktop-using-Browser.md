@@ -12,7 +12,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1.  Navigate to Azure portal, then search for *Host pools* in search bar and select **Host pools** from the suggestions.
 
-1. Navigate to **GS-AVD-HP**, then go to **Properties**. Under the **Preferred app group type**, choose **RemoteApp** and click **Save**.
+1. Navigate to **GS-AVD-HP**, then go to **Properties** under ***Settings*** blade. Under the **Preferred app group type**, choose **RemoteApp** and click **Save**.
 
    ![ws name.](media/1.1.png)
 
@@ -22,7 +22,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
    aka.ms/wvdarmweb 
    ``` 
 
-   >**Note:**  If you are already logged in to your user account, jump to step 3 else continue with the next step i.e., Step 2.
+   >**Note:**  If you are already logged in to your user account, jump to step 5 else continue with the next step i.e., Step 4.
 
 1. To login, enter the lab credentials below:
 
@@ -125,11 +125,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    ![ws name.](media/AVD-users.png)
 
-1. Click on the **Sessions (1)** tab, select both Host pools by clicking on the checkbox **(2)** and then click on the **Log off (3)** button.
+1. Click on the **Sessions (1)** tab, select both Host pools by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
    ![ws name.](media-2/session.png)
 
-1. Click on **OK** to *Log off user from VMs*.
+1. Click on **OK** to *Sign out user from VMs*.
 
    ![ws name.](media/jvm9.png)
 

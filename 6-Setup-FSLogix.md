@@ -40,13 +40,13 @@ In the following task, we will be creating a storage account with a file share w
    
    ![ws name.](media/lab6-1.png)
    
-4. On the _Advanced_ tab, leave it to default and click on the **Next: Networking >** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next: Networking >** button.
+4. On the _Advanced_ tab, click on the **Next: Networking >** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next** button.
 
    ![ws name.](media/lab6-2.png)
 
 5. In the _Networking_ tab, use the following configurations:
 
-   - Network access: **Enable public access from selected virtual networks and IP addresses (1)**
+   - Network access: Select **Enable public access from selected virtual networks and IP addresses (1)**
      
    >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
    - Virtual network subscription: Leave it to ***default (2)***.
@@ -73,7 +73,7 @@ In the following task, we will be creating a storage account with a file share w
 
    ![ws name.](media-2/L6E1S9-new.png)
 
-10. Select **Enable Azure Active Directory Domain Services (1)** and then click on **Save (2)**.
+10. Select **Enable Microsoft Entra Domain Services (Microsoft Entra DS) for this file share (1)** and then click on **Save (2)**.
      
     ![ws name.](media-2/L6E1S10.png)
     
@@ -90,7 +90,7 @@ In the following task, we will be creating a storage account with a file share w
 13. Enter the following name for your file share.
     
     - Name: **userprofile**   
-    - Tier: **Transaction Optimized**
+    - Access tier: **Transaction Optimized**
     - Click on **Review + create**, and then **Create** this will create the file share.
     
     ![ws name.](media/lab6-4.png)
@@ -115,7 +115,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
 1. Add the following configurations and leave the rest to default:
 
-   - Group name: **permission-fslogixcontainer**
+   - Group name: **permission - fslogixcontainer**
    - Click on **Create**.
 
    ![ws name.](media/2avd38.png)
@@ -159,7 +159,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
       
       - Click on **+  Select members (2)**.
 
-      - Under **Select** search paste your group **permission - fslogixcontainer (3)** and select it.
+      - Under **Select members,** paste your group name **permission - fslogixcontainer (3)** and select it.
    
       - Then click on **Select (4)**.
    
@@ -386,11 +386,11 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     ![ws name.](media/AVD-users.png)
     
-18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Log off (3)**.
+18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
     ![ws name.](media-2/session5.png)
     
-19. Click on **OK** to *Log off the user from VMs*.
+19. Click on **OK** to *Sign out the user from VMs*.
 
     ![ws name.](media/a73.png)
 

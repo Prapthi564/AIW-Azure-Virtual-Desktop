@@ -23,7 +23,7 @@ An application group of type ‘Desktop’, was created automatically while crea
 
    ![ws name.](media-1/Ex3-task1-step2.png)
 
-1. Click on the **Application Groups** tab and you will see the default Application Group there. 
+1. Click on the **Application Groups** tab under ***Manage*** blade and you will see the default Application Group there. 
 
    ![ws name.](media-2/applicationgroup.png)
    
@@ -41,8 +41,12 @@ An application group of type ‘Desktop’, was created automatically while crea
    
 1. We will now create a new Application Group of type ‘RemoteApp’. To do this, navigate back to the **Azure Virtual Desktop** and click on the **Host Pools (1)** button, then click on the **GS-AVD-HP (2)** pool.
 
-1. In the **GS-AVD-HP** host pool select **Application Groups** under **Applications**. Then select **+ Add** in the **GS-AVD-HP - Application groups**
+   ![ws name.](media-2/avd-6.png)
+
+1. In the **GS-AVD-HP** host pool select **Application Groups** under **Applications**.
   ![ws name.](media-2/lab3-2.png)
+
+1. Then select **+ Add** in the **GS-AVD-HP - Application groups**  
 
 1. In the *Basics* tab, do the following configuration: 
 
@@ -67,12 +71,14 @@ An application group of type ‘Desktop’, was created automatically while crea
 
 1. In this window, choose the parameters mentioned below: 
 
-    - Application Source: **Start Menu** *(choose from the dropdown)*  
-    - Application: **Excel** *(choose from the dropdown)* 
-    - Display Name: **Excel**
-    - Leave the rest of the parameters as default and click on **Review + Add** and then **Add**.
+    - Application Source: **Start Menu (1)** *(choose from the dropdown)*  
+    - Application: **Excel (2)** *(choose from the dropdown)* 
+    - Display Name: **Excel (3)**
+    - Leave the rest of the parameters as default and click on **Review + Add (4)**  
    
-    ![ws name.](media-1/L3E1S12.png)
+    ![ws name.](media-1/avd-7.png)
+
+1. Click on **Add.**    
  
 1. Click on **+ Add Applications** again. 
 
@@ -80,12 +86,14 @@ An application group of type ‘Desktop’, was created automatically while crea
 
 1. Choose the parameters as mentioned below: 
 
-    - Application Source: **Start Menu** *(choose from the dropdown)*   
-    - Application: **Word** *(choose from the dropdown)*
-    - Display Name: **Word**    
-    - Leave the rest of the parameters to default and click on **Review + Add** and then **Add**. 
+    - Application Source: **Start Menu (1)** *(choose from the dropdown)*   
+    - Application: **Word (2)** *(choose from the dropdown)*
+    - Display Name: **Word (3)**    
+    - Leave the rest of the parameters to default and click on **Review + Add (4)** 
    
-   ![ws name.](media-1/L3E1S14.png)
+   ![ws name.](media-1/avd-8.png)
+
+1. Click on **Add.**   
 
 1. Click on **Next: Assignments >**.
 

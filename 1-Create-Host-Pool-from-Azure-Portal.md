@@ -46,7 +46,7 @@ In this exercise, we will be creating the Host pool using **Quickstart** using m
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (11)**
    - **Click** on **Next : Virtual Machines > (12)**.
 
-   ![ws name.](media-1/L1E1S3.png)
+   ![ws name.](media-1/avd1.png)
    
 1. On the **Virtual Machines** tab, provide the information as mentioned below:
    
