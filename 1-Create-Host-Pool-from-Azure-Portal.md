@@ -105,13 +105,13 @@ In this exercise, we will be creating the Host pool using **Quickstart** using m
    
 1. It will take you to the **Host pool**. The resources created are as follows,
 
-   - **Host Pool**: 1 (GS-AVD-HP)
-   - **Session Host**: 2 (AVD-HP01-SH-0, AVD-HP01-SH-1)
-   - **Application Group**: 1 (GS-AVD-HP-DAG)
-   - **Application**: 1 (SessionDesktop)
-   - **Workspace**: 1 (GS-AVD-WS)
+    - **Host Pool**: 1 (GS-AVD-HP)
+    - **Session Host**: 2 (AVD-HP01-SH-0, AVD-HP01-SH-1)
+    - **Application Group**: 1 (GS-AVD-HP-DAG)
+    - **Application**: 1 (SessionDesktop)
+    - **Workspace**: 1 (GS-AVD-WS)
 
-   ![ws name.](media-1/L1E1S9.png)
+     ![ws name.](media-1/L1E1S9.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
