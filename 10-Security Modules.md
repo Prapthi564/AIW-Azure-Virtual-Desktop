@@ -92,7 +92,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
    - Search for **Windows Virtual Desktop** and click on the **check box** of **Azure Virtual Desktop** **(4)** next to the search result
    - Now Click on **Select** **(5)** button.
 
-   ![](media-1/L10-EX2-S7.png)
+   ![](media-1/select-apps.png)
   
    - Click on **0 conditions selected** **(1)** under Conditions option.
    - Then select **Client apps** **(2)**
@@ -316,7 +316,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
    
    >**Note:** If you are not able to capture the blacked-out screenshot of the session desktop, re-start the session desktop and re-perform the above step
    
-1. In your Own PC, open File Explorer navigate to **Pictures/Screenshots** and open the screenshot you took in Step-36
+1. In your Own PC, open File Explorer navigate to **Pictures/Screenshots** and open the screenshot you took in the above step
    
 1. Now you have successfully enabled the Screen Capture Protection in your Session host.
 
