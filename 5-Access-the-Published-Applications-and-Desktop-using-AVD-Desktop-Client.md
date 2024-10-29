@@ -116,7 +116,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
 1. Click on the **Refresh** button and make sure *No results* is displayed under Host pool.
 
-   ![ws name.](media-1/Ex5-task1-step19.png)
+   ![ws name.](media-1/avd-46.png)
    
 ## Exercise 2: Access the Virtual Desktop
 
