@@ -139,6 +139,6 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Click on the **Refresh** button and make sure no results are displayed under the Host pool.
 
-   ![ws name.](media-1/Ex4-task2-step10.png)
+   ![ws name.](media-1/avd-45.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide. 
