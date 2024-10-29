@@ -108,7 +108,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
 1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
-    ![ws name.](media-2/avd-15.png)
+    ![ws name.](media-1/avd-47.png)
 
 1. Click on **OK** to *Sign out user from VMs*.
 
