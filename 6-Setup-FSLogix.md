@@ -83,17 +83,17 @@ In the following task, we will be creating a storage account with a file share w
 
     ![ws name.](media-2/avd-48.png)
  
-12. On **File shares** page, click on  **+ File share**.
+12. On **File shares (1)** page, click on  **+ File share (2)**.
 
-    ![ws name.](media-2/L6E1S12.png)
+    ![ws name.](media-2/avd-49.png)
  
 13. Enter the following name for your file share.
     
-    - Name: **userprofile**   
-    - Access tier: **Transaction Optimized**
-    - Click on **Review + create**, and then **Create** this will create the file share.
+    - Name: **userprofile (1)**   
+    - Access tier: **Transaction Optimized (2)**
+    - Click on **Review + create (3)**, and then **Create** this will create the file share.
     
-    ![ws name.](media/lab6-4.png)
+    ![ws name.](media/avd-50.png)
 
     ![ws name.](media/lab6-5.png)
 
