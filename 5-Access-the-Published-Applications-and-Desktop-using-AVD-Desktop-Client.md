@@ -48,11 +48,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-   ![ws name.](media/95.png)
+   ![ws name.](media/avd-41.png)
 
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-   ![ws name.](media/96.png)
+   ![ws name.](media/avd-42.png)
    
    >**Note:** If there's a popup entitled **Help us protect your account**, click **Skip for now (14 days until this is required)**
 
@@ -108,7 +108,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
 1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
-    ![ws name.](media-2/avd-15.png)
+    ![ws name.](media-1/avd-47.png)
 
 1. Click on **OK** to *Sign out user from VMs*.
 
@@ -116,7 +116,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
 1. Click on the **Refresh** button and make sure *No results* is displayed under Host pool.
 
-   ![ws name.](media-1/Ex5-task1-step19.png)
+   ![ws name.](media-1/avd-46.png)
    
 ## Exercise 2: Access the Virtual Desktop
 
@@ -136,11 +136,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
-   ![ws name.](media/ch14.png)
+   ![ws name.](media/avd-51.png)
    
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
    
-   ![](media/login.png)
+   ![](media/skipfornow.png)
 
 1. Wait for the Session Desktop to connect.
 

@@ -79,21 +79,21 @@ In the following task, we will be creating a storage account with a file share w
     
     >**Note:** Setting this property implicitly ***domain joins*** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing file shares in the storage account.
  
-11. Return to the **<inject key="Storage Account Name" />**  storage account and on the left pane, click on **File shares** present under *Data Storage*, then click on **Refresh** a few times until the status of the Active Directory changes to **Configured** before continuing.
+11. Return to the **<inject key="Storage Account Name" />**  storage account and on the left pane, click on **File shares (1)** present under *Data Storage*, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
 
-    ![ws name.](media-2/L6E1S11.png)
+    ![ws name.](media-2/avd-48.png)
  
-12. On **File shares** page, click on  **+ File share**.
+12. On **File shares (1)** page, click on  **+ File share (2)**.
 
-    ![ws name.](media-2/L6E1S12.png)
+    ![ws name.](media-2/avd-49.png)
  
 13. Enter the following name for your file share.
     
-    - Name: **userprofile**   
-    - Access tier: **Transaction Optimized**
-    - Click on **Review + create**, and then **Create** this will create the file share.
+    - Name: **userprofile (1)**   
+    - Access tier: **Transaction Optimized (2)**
+    - Click on **Review + create (3)**, and then **Create** this will create the file share.
     
-    ![ws name.](media/lab6-4.png)
+    ![ws name.](media/avd-50.png)
 
     ![ws name.](media/lab6-5.png)
 
@@ -388,7 +388,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
     
 18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
-    ![ws name.](media-2/avd-22.png)
+    ![ws name.](media-1/avd-47.png)
     
 19. Click on **OK** to *Sign out the user from VMs*.
 
