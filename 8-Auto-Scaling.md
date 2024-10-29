@@ -44,10 +44,12 @@
 
     ![](./media/notepad.png)
     
-8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name" />** and save the changes.
+8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name" />** and Save the changes by clicking on **File (1) -> Save (2).**
 
-    ![](../Azure-Virtual-Desktop-v3/media/subid.png)
-    
+    ![](./media/avd-36.png)       
+
+    ![](./media/avd-37.png)       
+        
 9. After saving the changes, close the file and click on **Open** on the File Explorer.
 
     ![](./media/open.png)
@@ -68,7 +70,7 @@
 
     ![](./media/IAM.png)
    
-14. On **Add Role Assignment (1)** page, search for **Azure Virtual Desktop Autoscale (2)** and select it, then click on **Next (3)**.
+14. On **Add Role Assignment** page, search for **Azure Virtual Desktop Autoscale (1)** and select it **(2)** , then click on **Next (3)**.
 
     ![](./media/AVDrole.png)
    

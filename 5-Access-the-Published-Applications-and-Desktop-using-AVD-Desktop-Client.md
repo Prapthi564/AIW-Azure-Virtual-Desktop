@@ -58,15 +58,21 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    ![](media/skipfornow.png)
 
-1. Make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only**.
+1. If prompted, make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only**.
 
    ![ws name.](media/ex4t1s9.png)
 
-1. Navigate to Azure portal, then search for *Host pools* in search bar and select **Host pools** from the suggestions.
+1. Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
 
-1. Navigate to **GS-AVD-HP**, then go to **Properties**. Under the **Preferred app group type**, choose **RemoteApp** and click **Save**.
+   ![ws name.](media/avd-9.png)
 
-1. Return to WVD client application then click on three vertical dot then select **Refresh**.
+1. Navigate to **GS-AVD-HP**, then go to **Properties (1)**. Under the **Preferred app group type**, choose **RemoteApp (2)** and click **Save (3)**.
+
+   ![ws name.](media/avd-39.png)
+
+1. Return to WVD client application then click on three vertical dot **(...) (1)** then select **Refresh (2)**.
+
+   ![ws name.](media/avd-13.png)
       
 1. The AVD dashboard will launch, then double-click on the **Excel** application to access it.
 
@@ -76,7 +82,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
     - Password: **<inject key="AzureAdUserPassword" />**
    
-   ![ws name.](media/ch14.png)
+   ![ws name.](media/avd-14.png)
 
 1. Wait for the Application to connect.
 
@@ -96,17 +102,17 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    ![ws name.](media/w1.png)
 
-1. Click on **User** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" />** in the search bar and click on your user to open it.
+1. Click on **User (1)** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
 
-   ![ws name.](media/AVD-users.png)
+   ![ws name.](media/avd-12.png)
 
-1. Click on the **Sessions (1)** tab, select both Host pools by clicking on the checkbox **(2)** and then click on the **Log off (3)** button.
+1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
 
-   ![ws name.](media-2/hplogoff.png)
+    ![ws name.](media-2/avd-15.png)
 
-1. Click on **OK** to *Log off user from VMs*.
+1. Click on **OK** to *Sign out user from VMs*.
 
-   ![ws name.](media/jvm9.png)
+   ![ws name.](media/avd-16.png)
 
 1. Click on the **Refresh** button and make sure *No results* is displayed under Host pool.
 
@@ -114,7 +120,9 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
    
 ## Exercise 2: Access the Virtual Desktop
 
-1. Navigate to Azure portal, then search for *Host pools* in search bar and select **Host pools** from the suggestions.
+1. Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
+
+   ![ws name.](media/avd-9.png)
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties**. Under the **Preferred app group type**, choose **Desktop** and click **Save**.
 

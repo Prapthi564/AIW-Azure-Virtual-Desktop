@@ -22,33 +22,33 @@ In the following task, we will be creating a storage account with a file share w
 
 3. Use the following configuration for the storage account.
    
-   - Subscription: Leave it to ***default***.
+   - Subscription: Leave it to ***default (1)***.
    
-   - Resource Group: *Select **AVD-RG** from the drop-down*. 
+   - Resource Group: *Select **AVD-RG (2)** from the drop-down*. 
    
-   - Storage account name: **<inject key="Storage Account Name" />**   
+   - Storage account name: **<inject key="Storage Account Name" /> (3)**   
       
-   - Region: Select **<inject key="Region" />** from the drop-down list.  
+   - Region: Select **<inject key="Region" /> (4)** from the drop-down list.  
    
-   - Performance: **Standard**   
+   - Performance: **Standard (5)**   
    
-   - Replication: **Geo-redundant storage (GRS)**
+   - Replication: **Geo-redundant storage (GRS) (6)**
    
-   - **Select** Make read access to the data available in the event of regional unavailability.
+   - **Select** Make read access to the data available in the event of regional unavailability. **(7)**
    
-   - At last, click on **Next**
+   - At last, click on **Next (8)**
    
-   ![ws name.](media/lab6-1.png)
+   ![ws name.](media/avd-40.png)
    
-4. On the _Advanced_ tab, leave it to default and click on the **Next: Networking >** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next: Networking >** button.
+4. On the _Advanced_ tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next** button.
 
    ![ws name.](media/lab6-2.png)
 
 5. In the _Networking_ tab, use the following configurations:
 
-   - Network access: **Enable public access from selected virtual networks and IP addresses (1)**
+   - Network access: Select **Enable public access from selected virtual networks and IP addresses (1)**
      
-   >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
+      >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
    - Virtual network subscription: Leave it to ***default (2)***.
    - Virtual Network: **aadds-vnet (3)**
    - Subnets: **sessionhost-subnet (10.0.1.0/24) (4)**
@@ -73,7 +73,7 @@ In the following task, we will be creating a storage account with a file share w
 
    ![ws name.](media-2/L6E1S9-new.png)
 
-10. Select **Enable Azure Active Directory Domain Services (1)** and then click on **Save (2)**.
+10. Select **Enable Microsoft Entra Domain Services (Microsoft Entra DS) for this file share (1)** and then click on **Save (2)**.
      
     ![ws name.](media-2/L6E1S10.png)
     
@@ -90,7 +90,7 @@ In the following task, we will be creating a storage account with a file share w
 13. Enter the following name for your file share.
     
     - Name: **userprofile**   
-    - Tier: **Transaction Optimized**
+    - Access tier: **Transaction Optimized**
     - Click on **Review + create**, and then **Create** this will create the file share.
     
     ![ws name.](media/lab6-4.png)
@@ -107,7 +107,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
 1. Click on **Groups** under *Manage*.
 
-   ![ws name.](media/2avd34.png)
+   ![ws name.](media/avd-17.png)
    
 1. Click on **+ New group** to add a new group.
 
@@ -115,10 +115,10 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
 1. Add the following configurations and leave the rest to default:
 
-   - Group name: **permission-fslogixcontainer**
-   - Click on **Create**.
+   - Group name: **permission - fslogixcontainer (1)**
+   - Click on **Create (2)**.
 
-   ![ws name.](media/2avd38.png)
+   ![ws name.](media/avd-18.png)
    
 1. Click on **permission - fslogixcontainer** group to open.
 
@@ -132,9 +132,9 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
    ![ws name.](media-1/L6E2S7.png)
    
-1. Navigate to Storage Account **<inject key="Storage Account Name" />**, select **File Shares** under Data Storage and click on **userprofile** to open file share we created earlier.
+1. Navigate to Storage Account **<inject key="Storage Account Name" />**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
 
-   ![ws name.](media/lab6-select-fileshare.png)
+   ![ws name.](media/avd-19.png)
      
    >**Note:** The user won't have access to file share until we perform the next steps of this task. 
 
@@ -146,12 +146,12 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
    - Role: Search for **Storage File Data SMB Share Contributor (1)** and select it, then click on **Next (2)**.
 
-     ![ws name.](media/role%20assignemnt-v2.png)
+     ![ws name.](media/avd-20.png)
    
-   >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
-   > - *Storage File Data SMB Share Reader* allows read access in Azure Storage file shares over SMB.
-   > - *Storage File Data SMB Share Contributor* allows read, write, and delete access in Azure Storage file shares over SMB.
-   > - *Storage File Data SMB Share Elevated Contributor* allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
+      >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
+      > - *Storage File Data SMB Share Reader* allows read access in Azure Storage file shares over SMB.
+      > - *Storage File Data SMB Share Contributor* allows read, write, and delete access in Azure Storage file shares over SMB.
+      > - *Storage File Data SMB Share Elevated Contributor* allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
    
    - Under the **Members** tab, follow the below steps:
 
@@ -159,11 +159,11 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
       
       - Click on **+  Select members (2)**.
 
-      - Under **Select** search paste your group **permission - fslogixcontainer (3)** and select it.
+      - Under **Select members,** paste your group name **permission - fslogixcontainer (3)** and select it.
    
       - Then click on **Select (4)**.
    
-         ![ws name.](media-1/Ex6-task2-step10note.png)
+         ![ws name.](media-1/avd-21.png)
      
       - Click on **Review + assign**
 
@@ -386,13 +386,13 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     ![ws name.](media/AVD-users.png)
     
-18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Log off (3)**.
+18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
-    ![ws name.](media-2/session5.png)
+    ![ws name.](media-2/avd-22.png)
     
-19. Click on **OK** to *Log off the user from VMs*.
+19. Click on **OK** to *Sign out the user from VMs*.
 
-    ![ws name.](media/a73.png)
+    ![ws name.](media/avd-23.png)
 
     >**Note:** This will log off the user **<inject key="AzureAdUserEmail" />** from both the session hosts, so that when the user signs in again to the session hosts, FSLogix will start functioning.
         
@@ -451,27 +451,24 @@ In this task, we will be accessing the file share to verify the user profiles st
 
    ![ws name.](media/up10.png)
     
-2. Click on the storage account we created in **Task 1 step 3**, then under security + networking blade click on  **Networking**.
+2. Click on the storage account we created in *Task 1 step 3* **(1)**, then under security + networking blade click on  **Networking (2)**.
 
-   ![ws name.](media/storacc-v2.png)
+   ![ws name.](media/avd-24.png)
    
-3. Under **Public network access**, select **Enabled from all networks** and click on **save icon**.
+3. Under **Public network access**, select **Enabled from all networks (1)** and click on **save icon (2)**.
 
-   ![ws name.](media/stgup2.png)
+   ![ws name.](media/avd-25.png)
     
    >**Note:** This will enable access to your storage account on the public network so that you can see the user profiles stored in the file shares.
     
-4. Open the storage account we created earlier, then select **Fileshare** from the left side menu.
+4. Open the storage account we created earlier **(1)**, then select **Fileshare (2)** from the left side menu and the select **userprofile (3)** fileshare.
 
-   ![ws name.](media/wvd7.png)
+   ![ws name.](media/avd-26.png)
       
-5. Click on the **userprofile** fileshare.
-
-   ![ws name.](media/2avd33.png)
 
 6. Click on **Browse (1)**, and you will see the user **folder (2)** created in the file share, click on the folder.
 
-   ![ws name.](media-1/avd-l6-ex4-s6.png) 
+    ![ws name.](media-1/avd-27.png) 
 
 7. Now you will be able to see the user profile data stored in the filesharers in a ***.vhd*** format.
 
