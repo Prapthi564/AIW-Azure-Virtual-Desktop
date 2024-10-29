@@ -136,11 +136,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
-   ![ws name.](media/ch14.png)
+   ![ws name.](media/avd-51.png)
    
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
    
-   ![](media/login.png)
+   ![](media/skipfornow.png)
 
 1. Wait for the Session Desktop to connect.
 
