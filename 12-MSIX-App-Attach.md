@@ -15,7 +15,7 @@ Refer to this link ``https://docs.microsoft.com/en-us/azure/virtual-desktop/what
 
 1. In the right pane, click on **File shares (1)** present under *Data Storage* blade and click on **+File Share (2)**.
 
-    ![ws name.](media/2avd123-new.png)
+    ![ws name.](media/.png)
  
 1. Enter the following name for your file share.
     
@@ -23,7 +23,7 @@ Refer to this link ``https://docs.microsoft.com/en-us/azure/virtual-desktop/what
     - Tier: **Transaction Optimized**
     - Click on **Review + create**, then click on **Create**.This will create the file share.
     
-    ![ws name.](media/L12E1S3.png)
+    ![ws name.](media/msix-file-share.png)
     
 1. Go to the **msixfile** file share which you just created and select **upload**.
    
@@ -240,6 +240,8 @@ Refer to this link ``https://docs.microsoft.com/en-us/azure/virtual-desktop/what
    
    Now, The MSIX implementation is completed. We'll check the working of it.
     
+1. Go to AVD host pool, and select RemoteApp for Preferred app group type under properties.
+
 1. On your PC, go to **Start** and search for **Remote desktop** and open the remote desktop application with the exact icon as shown below.
 
    ![ws name.](media/137.png)
