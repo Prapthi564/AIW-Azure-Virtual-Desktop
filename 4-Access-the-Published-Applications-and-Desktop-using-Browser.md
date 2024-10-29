@@ -30,11 +30,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-   ![ws name.](media/95.png)
+   ![ws name.](media/avd-41.png)
 
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-   ![ws name.](media/96.png)
+   ![ws name.](media/avd-42.png)
 
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
 
@@ -67,7 +67,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Enter username **<inject key="AzureAdUserEmail" />** on *Activate Office* window and click on **Next**.
 
-   ![ws name.](media/ch6.png)
+   ![ws name.](media/avd-43.png)
 
    >**Note:** If you get a popup saying *Move Text in and out of Remote Desktop*, click on the ***Don't show again*** checkbox and then click on the ***Got it button***.
    
@@ -75,7 +75,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-   ![ws name.](media/ch7.png)
+   ![ws name.](media/avd-44.png)
 
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
  
