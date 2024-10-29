@@ -48,11 +48,11 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-   ![ws name.](media/95.png)
+   ![ws name.](media/avd-41.png)
 
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-   ![ws name.](media/96.png)
+   ![ws name.](media/avd-42.png)
    
    >**Note:** If there's a popup entitled **Help us protect your account**, click **Skip for now (14 days until this is required)**
 
