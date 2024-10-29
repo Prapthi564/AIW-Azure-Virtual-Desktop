@@ -69,12 +69,12 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 
    ![ws name.](media-1/avdmon1.1.png)
 
-1. On the **CheckAMAConfiguration** page, re-select the resource group and host pool name as mentioned below. After that select the **<inject key="Log Analytics Workspace Name" enableCopy="false" />** workspace from the drop-down menu under the **Resource diagnostic settings** section of the page. 
+1. On the **CheckAMAConfiguration** page, re-select the resource group and host pool name as mentioned below. After that select the **<inject key="Log Analytics Workspace Name" enableCopy="false" />** workspace **(3)** from the drop-down menu under the **Resource diagnostic settings** section of the page. 
 
-   - Resource group: **avd-hostpool-rg-avd**
-   - Host Pool: **GS-AVD-HP**
+   - Resource group: **avd-hostpool-rg-avd (1)**
+   - Host Pool: **GS-AVD-HP (2)**
 
-   ![ws name.](media/lab2-3.png)
+   ![ws name.](media/avdlab2-3.png)
    
 1. Scroll down on the same page and click on **Configure host pool**.
 
