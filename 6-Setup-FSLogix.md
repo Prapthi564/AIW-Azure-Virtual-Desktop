@@ -388,7 +388,7 @@ New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
     
 18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
-    ![ws name.](media-2/avd-22.png)
+    ![ws name.](media-1/avd-47.png)
     
 19. Click on **OK** to *Sign out the user from VMs*.
 
