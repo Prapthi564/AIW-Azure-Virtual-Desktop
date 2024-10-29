@@ -38,7 +38,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
 
-   ![](media/login.png)
+   ![](media/skipfornow.png)
 
 1. The AVD dashboard will launch. Click on **Word** to access it.  
 
@@ -79,7 +79,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
  
-   ![](media/login.png)
+   ![](media/skipfornow.png)
 
 1. Click on the **Close** button on the window asking *Your privacy option*.
 
