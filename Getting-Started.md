@@ -131,9 +131,9 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
 3. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-   ![Enter Your Password](./media/avdlogin2.png)
+   ![Enter Your Password](./media/vd6.png)
  
 4. If prompted to stay signed in, you can click "No."
  
