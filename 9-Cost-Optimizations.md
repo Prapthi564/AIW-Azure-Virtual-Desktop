@@ -163,6 +163,6 @@ In this task, you will through the process to understand the creation of a custo
 <validation step="3d66b36a-91fa-42d5-8d17-f1e17b43a996" />   
    
 
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
