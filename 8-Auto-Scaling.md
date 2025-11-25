@@ -139,7 +139,7 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     
     - Click on **Next (5)**
     
-        ![](./media/L8E1S24.png)
+      ![](./media/vd40.png)
    
 25. On the **Peak hours** tab, follow the below instructions:
 
@@ -147,7 +147,7 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     - Load Balancing Algorithm: Choose **Depth-first (2)**
     - Click on **Next (3)**
     
-        ![](./media/L8E1S25.png)
+        ![](./media/vd41.png)
    
 26. On the **Ramp-down** tab, follow the below instructions:
 
