@@ -122,9 +122,9 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
       ![ws name.](media/avd-18.png)
    
-1. Go to **All Groups (1)**, then click on the **permission - fslogixcontainer** group to open it.
+1. Go to **All Groups (1)**, then click on the **permission - fslogixcontainer (2)** group to open it.
 
-   ![ws name.](media/permission-v2.png)
+   ![ws name.](media/vd14.png)
    
 1. Click on **Members (1)** under **Manage** and select **+ Add members (2)**.
 
@@ -132,7 +132,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
 1. Search and select username **<inject key="AzureAdUserEmail" /> (1)** and click on **Select (2)**.
 
-   ![ws name.](media-1/L6E2S7.png)
+   ![ws name.](media/vd15.png)
    
 1. Navigate to Storage Account **<inject key="Storage Account Name" />**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
 
@@ -142,7 +142,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
 1. Click on **Access Control (IAM) (1)**, then click on **Add (2)** and select **Add role assignment (3)**.
 
-   ![ws name.](media/userprofiles(1).png)
+   ![ws name.](media/vd16.png)
    
 1. Select the following configuration for role assignment:  
    
@@ -192,7 +192,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
       
 2. Click on **AVD-HP01-SH-0**.
 
-     ![ws name.](media/fs4.png)
+     ![ws name.](media/vd17.png)
       
 3. Then click on **Run command** under **Operations**.
 
@@ -294,7 +294,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
    
 10. Navigate to virtual machines and click on **AVD-HP01-SH-1**.
 
-     ![ws name.](media/fs8.png)
+     ![ws name.](media/vd18.png)
 
 11. Click on **Run command (1)** under **Operations**. Then select **RunPowerShellScript (2)**.
 
@@ -390,9 +390,9 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
 
     ![ws name.](media/w1.png)
      
-17. Click on **Users**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user.
+17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user **(2)**.
 
-    ![ws name.](media/AVD-users.png)
+    ![ws name.](media/vd19.png)
     
 18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
@@ -415,9 +415,9 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
 
     - Password: Paste password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-    ![ws name.](media/w25.png)
+    ![ws name.](media/vd21.png)
 
-      >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+      >**Note:** If there's a dialog box saying ***Stay signed in***, then select the **No** option.
 
       ![](media/login1.png)
 
@@ -448,19 +448,19 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
 
 26. At last, click on **User Account** and click on **Sign Out**.
 
-    ![ws name.](./media/signoursd.png)
+    ![ws name.](./media/vd22.png)
    
 ## Exercise 4: Verifying the User profiles stored in File Share
 
 In this task, we will be accessing the file share to verify the user profiles stored in the *.vhd* format.
 
-1. Return to the Azure Portal, search for *storage accounts* in the search bar and click on **Storage Accounts** from the suggestions.
+1. Return to the Azure Portal, search for **storage accounts** in the search bar and click on **Storage Accounts** from the suggestions.
 
       ![ws name.](media/up10.png)
     
-2. Click on the storage account we created in *Task 1 step 3* **(1)**, then under security + networking blade click on  **Networking (2)**.
+2. Click on the storage account we created in *Task 1 step 3*  **(1)**, then under security + networking blade click on  **Networking (2)**.
 
-      ![ws name.](media/avd-24.png)
+      ![ws name.](media/vd23.png)
    
 3. Under **Public access (1)**, Click on **Enabled from all networks (2)**.
 
@@ -474,9 +474,8 @@ In this task, we will be accessing the file share to verify the user profiles st
     
 4. Open the storage account we created earlier **(1)**, then select **Fileshare (2)** from the left side menu and the select **userprofile (3)** fileshare.
 
-      ![ws name.](media/avd-26.png)
+      ![ws name.](media/vd24.png)
       
-
 5. Click on **Browse (1)**, and you will see the user **folder (2)** created in the file share, click on the folder.
 
       ![ws name.](media-1/avd-27.png) 

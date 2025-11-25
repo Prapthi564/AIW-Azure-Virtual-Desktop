@@ -60,12 +60,8 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-      ![ws name.](media/avd-42.png)
+      ![ws name.](media/vd6.png)
    
-      >**Note:** If there's a popup entitled **Help us protect your account**, click **Skip for now (14 days until this is required)**
-
-      ![](media/skipfornow.png)
-
 1. If prompted, make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only**.
 
    ![ws name.](media/ex4t1s9.png)
@@ -100,13 +96,13 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
    
 1. The Excel application will launch and look similar to the screenshot below.
 
-   ![ws name.](media/ch15.png) 
+   ![ws name.](media/vd12.png) 
     
 1. You can exit from the window of the Excel Application by clicking on **X *i.e., the close button***.
 
-   ![ws name.](media/ch16.png)
+   ![ws name.](media/vd13.png)
 
-1. Return back to the Azure Portal, search for *Azure virtual desktop* in the search bar, and select **Azure Virtual Desktop** from the suggestions.
+1. Return back to the Azure Portal, search for **Azure virtual desktop** in the search bar, and select **Azure Virtual Desktop** from the suggestions.
 
    ![ws name.](media/w1.png)
 

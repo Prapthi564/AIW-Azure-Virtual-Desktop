@@ -93,7 +93,13 @@ Welcome to your Azure Virtual Desktop Workshop! We've prepared a seamless enviro
 
 Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](./media/labguidea.png)
+![Access Your VM and Lab Guide](./media/vd1.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](./media/vd4.png)
 
 ## Virtual Machine & Guide
  
@@ -103,19 +109,19 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](./media/avdenva.png)
+![Explore Lab Resources](./media/vd2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./media/spla.png)
+![Use the Split Window Feature](./media/vd3.png)
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./media/resa.png)	
+![Manage Your Virtual Machine](./media/vd5.png)	
 
 ## Let's Get Started with Azure Portal
  
@@ -131,65 +137,19 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 3. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-   ![Enter Your Password](./media/avdlogin2.png)
+   ![Enter Your Password](./media/vd6.png)
  
-4. If prompted to stay signed in, you can click "No."
+4. If prompted to stay signed in, you can click **No**.
  
 5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
-### Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If **Action required** pop-up window appears, click on **Next**.
-   
-   ![](images/intro-7.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-
-   ![](images/avmg1.png)
-
-1. Click on **Next** again.
-
-   ![](images/avmg2.png)
-
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](images/intro-8.png)
-
-   > Note: For iOS, open the App Store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
-
-   ![QR code](images/Intro-0.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](images/intro-9.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.   
-
-4. Now in the Azure portal, click on **Resource Groups** present under *Navigate*.
+6. Now in the Azure portal, click on **Resource Groups** present under *Navigate*.
 
    ![](media/jvm3.png)
 
-5. You will see a list of resource groups as shown in the image below. Click on **AVD-RG** to open it.
+7. You will see a list of resource groups as shown in the image below. Click on **AVD-RG** to open it.
 
    ![](media/GS7.png)
    

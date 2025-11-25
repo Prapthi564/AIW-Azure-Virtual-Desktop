@@ -58,7 +58,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 1. Click on the **permission - fslogixcontainer (1)** group and then click on **Select (2)**.
 
-   ![ws name.](media-1/avd-31.png)
+   ![ws name.](media-1/vd25.png)
 
 1. Click on **AVDUser02** to open it. Then click on **Groups** **(1)** and select **+ Add memberships** **(2)**.
 
@@ -66,9 +66,9 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 1. Click on the **permission - fslogixcontainer (1)** group and then click on **Select (2)**.
 
-   ![ws name.](media-1/avd-31.png)
+   ![ws name.](media-1/vd25.png)
 
-1. Navigate to the *host pool* **GS-AVD-HP** and open **Application groups** present under *Manage* blade. Two application groups will be listed there.
+1. Navigate to the *host pool* **GS-AVD-HP** and open **Application groups** present under *Manage* blade. **Two application groups** will be listed there.
 
     ![ws name.](media-2/Application.png)
 
@@ -78,11 +78,11 @@ The following load-balancing methods are available in Azure Virtual Desktop:
    
 1. Click on **Assignments(1)** then click on **+ Add (2)**, then in the search bar, type **AVD** and select both **AVDUser01 & AVDUser02 (3)** that we created earlier. At last, click on the **Select (4)** button.
 
-    ![ws name.](media-2/L7E1S13.png)
+    ![ws name.](media-2/vd26.png)
 
 1. Once done, the users assigned to the Application group will look similar to the image given below.
 
-    ![ws name.](media-2/avdusers.png)
+    ![ws name.](media-2/vd27.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -97,7 +97,7 @@ Here, we will use Powershell to run a script that will change the passwords for 
 
 1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
 
-   ![ws name](media/lab7-avd1.png)
+   ![ws name](media-2/vd28.png)
 
 2. Run the following command in your terminal to set up your Azure account permissions locally.
 
@@ -113,13 +113,13 @@ Here, we will use Powershell to run a script that will change the passwords for 
 
 5. Enter your password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-   ![](media/lab7-avd3.png)
+   ![](media/vd6.png)
 
 6. Copy and paste the following script and hit **Enter**.
 
    ```
-   Get-AzureADDOmain
-   $domain = Get-AzureADDOmain
+   Get-AzADDomainService
+   $domain = Get-AzADDomainService
    $domain = $domain.Name
    $PasswordProfile = @{
    Password = 'Azure1234567'
@@ -134,7 +134,8 @@ Here, we will use Powershell to run a script that will change the passwords for 
  
 7. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
 
-    ![ws name.](media/avd-33.png)
+    ![ws name.](media/vd30.png)
+    ![ws name.](media/vd29.png)    
 
    >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
@@ -163,13 +164,48 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
    - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
 
-      ![ws name.](media/password.png)
+      ![ws name.](media/vd6.png)
 
-     >**Note:** If you see the **Action Required** pop up, click on **Ask later.**
+     >**Note:** Follow the below steps, if MFA prompted:
 
-     >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
+     - Click **Next** in **Lets keep your account secure**.
+     - On **Install Microsoft Authenticator**, click **Next**.
 
-        ![sdad](media/login1.png)
+       ![ws name.](media/vd31.png)   
+
+     - Click **Next**.
+
+       ![ws name.](media/vd32.png)   
+
+     - In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.      
+
+       ![Install](images/intro-8.png)
+
+        >Note: For iOS, open the App Store and repeat the steps.
+
+        >Note: Skip if already installed.       
+
+     - Open the app and tap on **Scan a QR code**.
+
+     - Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
+
+       ![QR code](media/vd33.png)
+
+     - Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
+
+       ![QR code](media/vd34.png)     
+
+     - Once the notification is approved, click on **Next**.
+
+     - Click on **Done**.
+
+       ![QR code](media/vd35.png)      
+
+1. If prompted to stay signed in, you can click **"No"**.
+
+1. Tap on **Finish** in the Mobile Device.
+
+   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
 1. Now in the AVD dashboard, click on the **Session Desktop** to access it. 
 
@@ -210,7 +246,9 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
    - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on* **Next**.
    - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
 
-       ![ws name.](media/password2.png)
+     ![ws name.](media/password2.png)
+
+      >**Note**: If MFA prompts, please follow the MFA steps provided.
 
 1. If you see the **Action Required** pop up, click on **Ask later.**
 
@@ -274,7 +312,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
    >**Note:** If the previous session is closed, visit `aka.ms/wvdarmweb`, then click on *Default Desktop* and log in with *AVDUser01* credentials.
 
-1. In *GS-AVD-HP* host pool, click on **Properties** under *Settings* blade.
+1. In **GS-AVD-HP** host pool, click on **Properties** under *Settings* blade.
 
      ![ws name.](media-2/properties.png)
 
@@ -347,6 +385,6 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
       ![ws name.](media-2/users.png)
 
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 

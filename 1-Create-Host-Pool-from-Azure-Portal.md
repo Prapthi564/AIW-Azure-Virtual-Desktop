@@ -4,7 +4,7 @@
 
 ## **Scenario**
 
-Contoso is planning to set up its infrastructure on Azure. As a first step, Contoso needs you to provision a host pool which is the main component of AVD. The creation of a host pool also includes session hosts, a default application group, and a workspace.
+Contoso is planning to set up its infrastructure on Azure. As a first step, Contoso needs you to provision a host pool which is the main component of AVD. The creation of a host pool also includes session hosts, a default application group, and a workspace. 
 
 ## **Overview**
 
@@ -32,9 +32,7 @@ In this exercise, we will be creating the Host pool.
    - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
    - Preferred app group type: **Desktop (5)**
 
-      ![ws name.](media/projdetail.png)
-
-      >**Note**: The region you selected in the lab might be different from the region mentioned in the screenshot.
+      ![ws name.](media/vd7.png)
 
 1. In the **Host pool details** section, enter the required information and then click **Next: Session hosts > (10)** to proceed.
 
@@ -55,9 +53,7 @@ In this exercise, we will be creating the Host pool.
    - Availability options: **No infrastructure redundancy required (6)**
    - Security type: **Trusted launch virtual machines (7)**
 
-      ![ws name.](media/projdetailb.png)
-
-      >**Note**: The region you selected in the lab might be different from the region mentioned in the screenshot.
+      ![ws name.](media/vd8.png)
 
 1. In the **Image**, click on **See all images** to choose the required images.
 
@@ -100,10 +96,10 @@ In this exercise, we will be creating the Host pool.
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (6)**
-   - Confirm password: **<inject key="AzureAdUserPassword" /> (7)**
+   - Password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (6)**
+   - Confirm password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (7)**
 
-      ![ws name.](media/projdetailh.png)
+      ![ws name.](media/vd9.png)
 
 12. In the **Workspace section**, select **Yes (1)** for **Register desktop app group**.  
 

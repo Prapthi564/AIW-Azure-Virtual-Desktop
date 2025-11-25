@@ -12,11 +12,13 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 ## Exercise 1: Access the Published Application
 
-1.  Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
+1.  Navigate to Azure portal, then search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
 
     ![ws name.](media/avd-9.png)
 
-1. Navigate to **GS-AVD-HP**, then go to **RDP Properties (1)** under ***Settings*** blade. Under the **Device redirection (2)**, select the Clipboard redirection from the drop down as **Clipboard on local computer is available in remote session (3)** and click **Save (4)**.
+1. Navigate to **GS-AVD-HP**.
+
+1. Then go to **RDP Properties (1)** under ***Settings*** blade. Under the **Device redirection (2)**, select the Clipboard redirection from the drop down as **Clipboard on local computer is available in remote session (3)** and click **Save (4)**.
 
     ![ws name.](media/avd-0704.png)
 
@@ -30,7 +32,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
    aka.ms/wvdarmweb 
    ``` 
 
-   >**Note:**  If you are already logged in to your user account, jump to step 5 else continue with the next step i.e., Step 4.
+   >**Note:**  If you are already logged in to your user account, jump to step 7 else continue with the next step i.e., Step 6.
 
 1. To login, enter the lab credentials below:
 
@@ -38,9 +40,9 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
    
       ![ws name.](media/avd-41.png)
 
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+   - Temporary Access Pass: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-      ![ws name.](media/avd-42.png)
+      ![ws name.](media/vd6.png)
 
       >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
 
@@ -62,9 +64,9 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
       ![ws name.](media/lab4-2.png)
       
-1. The Word application will launch and look similar to the screenshot below. Click on **Sign in**.
+1. The Word application will launch and look similar to the screenshot below. Click on **Sign in or Create account**.
 
-   ![ws name.](media/ch9.png)
+   ![ws name.](media/vd11.png)
    
    >**Note:**  If you see a Blank Screen while launching the application, restart the AVD Session Hosts. To do so; follow the below steps:
    > - Navigate back to the Azure Portal and search for **Virtual Machines** from search bar.
@@ -81,7 +83,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 1. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-   ![ws name.](media/avd-44.png)
+   ![ws name.](media/vd6.png)
 
    >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
  
@@ -129,7 +131,7 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
    
    > **Note:** If you see a black screen while launching the session desktop, please re-start the session desktop by re-performing the lab from step 2.
 
-1. Return back to the Azure Portal, search for *Azure virtual desktop* in the search bar, and select **Azure Virtual Desktop** from the suggestions.
+1. Return back to the Azure Portal, search for **Azure virtual desktop** in the search bar, and select **Azure Virtual Desktop** from the suggestions.
 
    ![ws name.](media/w1.png)
 

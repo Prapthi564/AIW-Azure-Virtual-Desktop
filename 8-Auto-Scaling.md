@@ -18,11 +18,11 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     
 2. Select your **Subscription** from **Subscriptions** page.
 
-   ![](./media/sybname.png)
+   ![](./media/vd36.png)
    
 3. Now select **Access Control (IAM) (1)** and click on **+ Add (2)** then select **Add custom role (3)**.
 
-   ![](media/customrole1.png)
+   ![](media/vd37.png)
     
 4. On the **Basics** tab, follow the below instructions:
 
@@ -86,9 +86,10 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
    
 16. On **Select members (1)** tab, search for **Windows Virtual Desktop (2)** and select it then click on **Select (3)**.
 
+    >**Note:** In certain situations **Windows Virtual Desktop** might not be visible in the search results, in certain situations please search for **Azure virtual desktop** and select it from the search result.
+
     ![](./media/WindowsVirtualdesktop1.png)
     
-    >**Note:** In certain situations **Windows Virtual Desktop** might not be visible in the search results, in certain situations please search for **Azure virtual desktop** and select it from the search result.
     
 17. After adding members, review the configuration and click on **Review + assign**.
 
@@ -118,8 +119,8 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     - Scaling method: **Power Management Autoscaling (8)**
     - Click on **Next : Schedules > (9)**
 
-        ![](./media/scalingplan-01.png)
-        ![](./media/scalingplan-02.png)
+        ![](./media/vd38.png)
+        ![](./media/vd39.png)
       
 22. On the **Schedules** tab, click on **+ Add Schedule**
 
@@ -138,7 +139,7 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     
     - Click on **Next (5)**
     
-        ![](./media/L8E1S24.png)
+      ![](./media/vd40.png)
    
 25. On the **Peak hours** tab, follow the below instructions:
 
@@ -146,7 +147,7 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     - Load Balancing Algorithm: Choose **Depth-first (2)**
     - Click on **Next (3)**
     
-        ![](./media/L8E1S25.png)
+        ![](./media/vd41.png)
    
 26. On the **Ramp-down** tab, follow the below instructions:
 

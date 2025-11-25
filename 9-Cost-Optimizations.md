@@ -16,13 +16,13 @@ In this task, you will through the process to understand the creation of a custo
 
 1. In your JumpVM launch browser and go to Aure Portal (https://portal.azure.com).
 
-1. Now in the Azure portal search for **Subscription** and click on the search result.
+1. In the Azure Portal, search for **Subscriptions (1)** and select it from the search result **(2)**.
 
-   ![](media/subscription-select-01.png)
+   ![](./media/subscriptions.png)
 
-1. On the Subscription page, click on the name of your subscription.
+1. Select your **Subscription** from **Subscriptions** page.
 
-   ![](media/avdv220.png)
+   ![](./media/vd36.png)
   
 1. Now from the left-hand side blade, Click on **Access Control (IAM) (1)** and then click on **+ Add (2)** and select **Add custom role (3)**.
 
@@ -80,9 +80,9 @@ In this task, you will through the process to understand the creation of a custo
 
 ### Task 1: Configuring Host Pool Properties
 
-1. In the Azure portal, search for **Azure Virtual Desktop** and select it from the search result.
+1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
-   ![](media/avdv229.png)
+   ![ws name.](media/2avd1.png)
   
 1. On the left-hand side blade, click on **Host pools** **(1)** and select the **host pool** **(2)** we want to configure.
 
@@ -99,17 +99,17 @@ In this task, you will through the process to understand the creation of a custo
 
 ### Task 1: Stop the Session host VMs
 
-1. In Azure Portal search for **Virtual Machines** and click on it.
+1. In Azure Portal search for **Virtual Machines (1)** and select **Virtual Machines (2)**.
 
-   ![](media/avdv232.png)
+   ![](media/vd42.png)
 
 1. Select the **session host VMs** **(1)** and click on **Stop** **(2)**.
 
-   ![](media/2avd115.png)
+   ![](media/vd43.png)
   
 1. On a prompt saying "Do you want to stop the selected Virtual Machines" click on **Yes**.
 
-   ![](media/2avd116.png)
+   ![](media/vd44.png)
   
 ### Task 2: Access the Session host desktop
 
@@ -153,7 +153,7 @@ In this task, you will through the process to understand the creation of a custo
      
 1. Return to the Azure portal and click on **refresh** **(1)** to get the updated status of Virtual Machines. Here, we can see the session hosts VM in the **Running** state and has started automatically when the session desktop was launched.
 
-   ![](media/2avd117.png)
+   ![](media/vd45.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - If you receive a success message, you can proceed to the next task.
@@ -163,6 +163,6 @@ In this task, you will through the process to understand the creation of a custo
 <validation step="3d66b36a-91fa-42d5-8d17-f1e17b43a996" />   
    
 
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 

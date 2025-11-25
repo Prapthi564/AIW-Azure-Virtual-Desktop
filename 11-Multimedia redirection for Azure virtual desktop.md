@@ -13,7 +13,7 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
 
    ![ws name.](media/w1.png)
    
-1. Select **Host pools** from the side blade and select **GS-AVD-HP**.
+1. Select **Host pools (1)** from the side blade and select **GS-AVD-HP (2)**.
 
    ![ws name.](media-2/avdhp.png)
    
@@ -51,7 +51,7 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
    
 1. Enter password: **<inject key="AzureAdUserPassword" />**
 
-   ![ws name.](media/lab11-teams-signin.png)
+   ![ws name.](media/vd6.png)
    >**Note:** After you log in to Microsoft Teams, if a pop-up appears showing “What’s New in Teams”, click on “Continue” and then select “Got it” to proceed.
    
 1. After the Teams application is launched, click on the **three dots** **(1)** then, click on **Settings** **(2)**.
@@ -84,13 +84,13 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
    >**Note:** If a pop-up appears stating “To give you the best Teams experience on a virtual desktop, we need to restart the app,” simply click “Cancel” to dismiss 
    
    >**Note**: If the audio is not working. Please skip the step and continue with the lab as this is an expected issue.
-   
-1. Click on **Allow access** on the Windows Security alert prompt.
+  
+1. If prompted, click on **Allow access** on the Windows Security alert prompt.
 
    ![ws name.](media/teams16.png)
-   
-   >**NOTE**: If the **Invite People to join you** prompt appears, close the tab and continue.
-  
+
+1. If the **Invite People to join you** prompt appears, close the tab and continue.     
+
 1. Now, you should be able to see yourself as the video is On.
 
    ![](./media/camn.png)
