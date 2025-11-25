@@ -153,7 +153,7 @@ In this task, you will through the process to understand the creation of a custo
      
 1. Return to the Azure portal and click on **refresh** **(1)** to get the updated status of Virtual Machines. Here, we can see the session hosts VM in the **Running** state and has started automatically when the session desktop was launched.
 
-   ![](media/2avd117.png)
+   ![](media/vd45.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - If you receive a success message, you can proceed to the next task.
