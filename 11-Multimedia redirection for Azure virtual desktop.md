@@ -13,7 +13,7 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
 
    ![ws name.](media/w1.png)
    
-1. Select **Host pools** from the side blade and select **GS-AVD-HP**.
+1. Select **Host pools (1)** from the side blade and select **GS-AVD-HP (2)**.
 
    ![ws name.](media-2/avdhp.png)
    
@@ -51,7 +51,7 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
    
 1. Enter password: **<inject key="AzureAdUserPassword" />**
 
-   ![ws name.](media/lab11-teams-signin.png)
+   ![ws name.](media/vd6.png)
    >**Note:** After you log in to Microsoft Teams, if a pop-up appears showing “What’s New in Teams”, click on “Continue” and then select “Got it” to proceed.
    
 1. After the Teams application is launched, click on the **three dots** **(1)** then, click on **Settings** **(2)**.
