@@ -166,11 +166,46 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
       ![ws name.](media/vd6.png)
 
-     >**Note:** If you see the **Action Required** pop up, click on **Ask later.**
+     >**Note:** Follow the below steps, if MFA prompted:
 
-     >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
+     - Click **Next** in **Lets keep your account secure**.
+     - On **Install Microsoft Authenticator**, click **Next**.
 
-        ![sdad](media/login1.png)
+       ![ws name.](media/vd31.png)   
+
+     - Click **Next**.
+
+       ![ws name.](media/vd32.png)   
+
+     - In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.      
+
+       ![Install](images/intro-8.png)
+
+        >Note: For iOS, open the App Store and repeat the steps.
+
+        >Note: Skip if already installed.       
+
+     - Open the app and tap on **Scan a QR code**.
+
+     - Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
+
+       ![QR code](media/vd33.png)
+
+     - Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
+
+       ![QR code](media/vd34.png)     
+
+     - Once the notification is approved, click on **Next**.
+
+     - Click on **Done**.
+
+       ![QR code](media/vd35.png)      
+
+1. If prompted to stay signed in, you can click **"No"**.
+
+1. Tap on **Finish** in the Mobile Device.
+
+   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
 1. Now in the AVD dashboard, click on the **Session Desktop** to access it. 
 
@@ -211,7 +246,9 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
    - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on* **Next**.
    - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
 
-       ![ws name.](media/password2.png)
+     ![ws name.](media/password2.png)
+
+      >**Note**: If MFA prompts, please follow the MFA steps provided.
 
 1. If you see the **Action Required** pop up, click on **Ask later.**
 
@@ -348,6 +385,6 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
       ![ws name.](media-2/users.png)
 
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
