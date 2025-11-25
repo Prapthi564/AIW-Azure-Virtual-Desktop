@@ -97,7 +97,7 @@ Here, we will use Powershell to run a script that will change the passwords for 
 
 1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
 
-   ![ws name](media/lab7-avd1.png)
+   ![ws name](media-2/vd28.png)
 
 2. Run the following command in your terminal to set up your Azure account permissions locally.
 
@@ -113,13 +113,13 @@ Here, we will use Powershell to run a script that will change the passwords for 
 
 5. Enter your password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-   ![](media/lab7-avd3.png)
+   ![](media/vd6.png)
 
 6. Copy and paste the following script and hit **Enter**.
 
    ```
-   Get-AzureADDOmain
-   $domain = Get-AzureADDOmain
+   Get-AzADDomainService
+   $domain = Get-AzADDomainService
    $domain = $domain.Name
    $PasswordProfile = @{
    Password = 'Azure1234567'
@@ -134,7 +134,8 @@ Here, we will use Powershell to run a script that will change the passwords for 
  
 7. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
 
-    ![ws name.](media/avd-33.png)
+    ![ws name.](media/vd30.png)
+    ![ws name.](media/vd29.png)    
 
    >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
