@@ -164,7 +164,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
    - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
 
-      ![ws name.](media/password.png)
+      ![ws name.](media/vd6.png)
 
      >**Note:** If you see the **Action Required** pop up, click on **Ask later.**
 
@@ -275,7 +275,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
    >**Note:** If the previous session is closed, visit `aka.ms/wvdarmweb`, then click on *Default Desktop* and log in with *AVDUser01* credentials.
 
-1. In *GS-AVD-HP* host pool, click on **Properties** under *Settings* blade.
+1. In **GS-AVD-HP** host pool, click on **Properties** under *Settings* blade.
 
      ![ws name.](media-2/properties.png)
 
