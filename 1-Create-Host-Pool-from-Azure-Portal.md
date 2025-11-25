@@ -53,9 +53,7 @@ In this exercise, we will be creating the Host pool.
    - Availability options: **No infrastructure redundancy required (6)**
    - Security type: **Trusted launch virtual machines (7)**
 
-      ![ws name.](media/projdetailb.png)
-
-      >**Note**: The region you selected in the lab might be different from the region mentioned in the screenshot.
+      ![ws name.](media/vd8.png)
 
 1. In the **Image**, click on **See all images** to choose the required images.
 
