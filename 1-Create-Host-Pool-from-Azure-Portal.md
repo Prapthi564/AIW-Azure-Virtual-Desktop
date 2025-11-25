@@ -32,9 +32,7 @@ In this exercise, we will be creating the Host pool.
    - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
    - Preferred app group type: **Desktop (5)**
 
-      ![ws name.](media/projdetail.png)
-
-      >**Note**: The region you selected in the lab might be different from the region mentioned in the screenshot.
+      ![ws name.](media/vd7.png)
 
 1. In the **Host pool details** section, enter the required information and then click **Next: Session hosts > (10)** to proceed.
 
