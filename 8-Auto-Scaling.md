@@ -119,8 +119,8 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
     - Scaling method: **Power Management Autoscaling (8)**
     - Click on **Next : Schedules > (9)**
 
-        ![](./media/scalingplan-01.png)
-        ![](./media/scalingplan-02.png)
+        ![](./media/vd38.png)
+        ![](./media/vd39.png)
       
 22. On the **Schedules** tab, click on **+ Add Schedule**
 
