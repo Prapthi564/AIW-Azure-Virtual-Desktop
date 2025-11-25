@@ -96,10 +96,10 @@ In this exercise, we will be creating the Host pool.
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (6)**
-   - Confirm password: **<inject key="AzureAdUserPassword" /> (7)**
+   - Password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (6)**
+   - Confirm password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (7)**
 
-      ![ws name.](media/projdetailh.png)
+      ![ws name.](media/vd9.png)
 
 12. In the **Workspace section**, select **Yes (1)** for **Register desktop app group**.  
 
