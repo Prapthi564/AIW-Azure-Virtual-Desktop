@@ -84,13 +84,13 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
    >**Note:** If a pop-up appears stating “To give you the best Teams experience on a virtual desktop, we need to restart the app,” simply click “Cancel” to dismiss 
    
    >**Note**: If the audio is not working. Please skip the step and continue with the lab as this is an expected issue.
-   
-1. Click on **Allow access** on the Windows Security alert prompt.
+  
+1. If prompted, click on **Allow access** on the Windows Security alert prompt.
 
    ![ws name.](media/teams16.png)
-   
-   >**NOTE**: If the **Invite People to join you** prompt appears, close the tab and continue.
-  
+
+1. If the **Invite People to join you** prompt appears, close the tab and continue.     
+
 1. Now, you should be able to see yourself as the video is On.
 
    ![](./media/camn.png)
