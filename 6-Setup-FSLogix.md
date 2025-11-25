@@ -122,9 +122,9 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
       ![ws name.](media/avd-18.png)
    
-1. Go to **All Groups (1)**, then click on the **permission - fslogixcontainer** group to open it.
+1. Go to **All Groups (1)**, then click on the **permission - fslogixcontainer (2)** group to open it.
 
-   ![ws name.](media/permission-v2.png)
+   ![ws name.](media/vd14.png)
    
 1. Click on **Members (1)** under **Manage** and select **+ Add members (2)**.
 
@@ -132,7 +132,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
    
 1. Search and select username **<inject key="AzureAdUserEmail" /> (1)** and click on **Select (2)**.
 
-   ![ws name.](media-1/L6E2S7.png)
+   ![ws name.](media/vd15.png)
    
 1. Navigate to Storage Account **<inject key="Storage Account Name" />**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
 
@@ -142,7 +142,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
 1. Click on **Access Control (IAM) (1)**, then click on **Add (2)** and select **Add role assignment (3)**.
 
-   ![ws name.](media/userprofiles(1).png)
+   ![ws name.](media/vd16.png)
    
 1. Select the following configuration for role assignment:  
    
@@ -192,7 +192,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
       
 2. Click on **AVD-HP01-SH-0**.
 
-     ![ws name.](media/fs4.png)
+     ![ws name.](media/vd17.png)
       
 3. Then click on **Run command** under **Operations**.
 
@@ -294,7 +294,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
    
 10. Navigate to virtual machines and click on **AVD-HP01-SH-1**.
 
-     ![ws name.](media/fs8.png)
+     ![ws name.](media/vd18.png)
 
 11. Click on **Run command (1)** under **Operations**. Then select **RunPowerShellScript (2)**.
 
@@ -390,9 +390,9 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
 
     ![ws name.](media/w1.png)
      
-17. Click on **Users**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user.
+17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user **(2)**.
 
-    ![ws name.](media/AVD-users.png)
+    ![ws name.](media/vd19.png)
     
 18. Switch to **Sessions (1)** tab, then select **Host Pools (2)** and click on **Sign out (3)**.
 
