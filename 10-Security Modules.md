@@ -2,13 +2,21 @@
 
 ### Estimated Duration: 50 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso wants its resources to be secure and protected from any kind of unethical activities. So Contoso wants to enable Multi-factor authentication (MFA) for session login. You will guide Contoso to set up MFA for sign-ins.
 
-## **Overview**
+In this lab, you will be enabling Multi-Factor authentication, Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, which increases the level of security.
 
-In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, which increases the level of security.
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Setup Multi-Factor Authentication (MFA)
+
+- Exercise 2: Creating Conditional Access Policy
+- Exercise 3: Screen Capture Protection
+- Exercise 4: App Locker
 
 ## Exercise 1: Setup Multi-Factor Authentication (MFA)
 
