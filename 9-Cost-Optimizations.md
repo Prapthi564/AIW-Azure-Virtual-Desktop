@@ -179,6 +179,9 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
 <validation step="3d66b36a-91fa-42d5-8d17-f1e17b43a996" />   
    
+## Summary
+
+In this lab, you enabled the Start VM on Connect feature to optimize Azure Virtual Desktop costs by creating and assigning a custom role and configuring the host pool to allow automatic VM startup. You then stopped the session host VMs, launched the AVD Session Desktop to validate that the VMs power on when a user connects, confirming successful cost-efficient on-demand access.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
