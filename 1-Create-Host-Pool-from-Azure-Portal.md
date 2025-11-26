@@ -10,6 +10,8 @@ A Host Pool is a collection of Azure virtual machines that register to Azure Vir
 
 ## Lab Objective
 
+In this lab, you will complete the following exercise:
+
 - Exercise 1: Create Host Pool using Getting Started Wizard
 
 ## Exercise 1: Create Host Pool using Getting Started Wizard

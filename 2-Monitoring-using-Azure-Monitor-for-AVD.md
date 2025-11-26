@@ -10,6 +10,8 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 
 ## Lab Objectives
 
+In this lab, you will complete the following exercises:
+
 - Exercise 1: Create Log Analytics
 - Exercise 2: Enable diagnostics for Workspace
 

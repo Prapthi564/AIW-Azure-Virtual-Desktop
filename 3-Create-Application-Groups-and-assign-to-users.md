@@ -14,6 +14,8 @@ As explained in the General Hierarchy section, an Application Group is a logical
 
 ## Lab objective
 
+In this lab, you will complete the following exercise:
+
 - Exercise 1: Create an Application Group
 
 ### Exercise 1: Create an Application Group
