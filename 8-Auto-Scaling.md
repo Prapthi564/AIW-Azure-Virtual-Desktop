@@ -12,12 +12,12 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
    - Specific days of the week
    - Session limits per session host
 
-## Lab Objectives
+## Lab Objective
 
 In this lab, you will complete the following exercise:
 
 - Exercise 1: Create a Scaling Plan
-- 
+
 
 ## Exercise 1: Create a Scaling Plan
 
