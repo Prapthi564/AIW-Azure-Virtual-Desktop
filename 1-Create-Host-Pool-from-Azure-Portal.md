@@ -10,9 +10,13 @@ Contoso is planning to set up its infrastructure on Azure. As a first step, Cont
 
 A Host Pool is a collection of Azure virtual machines that register to Azure Virtual Desktop as session hosts when you run the Azure Virtual Desktop agent. All session host virtual machines in a host pool should be sourced from the same image for a consistent user experience. To start host pool creation, we will login to the Azure portal.
 
+## Lab Objective
+
+- Exercise 1: Create Host Pool using Getting Started Wizard
+
 ## Exercise 1: Create Host Pool using Getting Started Wizard
 
-In this exercise, we will be creating the Host pool.
+In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
 
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
@@ -142,6 +146,10 @@ In this exercise, we will be creating the Host pool.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="97d211ae-121b-445b-a278-054cda35de33" />   
+
+## Summary
+
+In this lab, you create an Azure Virtual Desktop host pool using the Getting Started Wizard, configure session hosts, join them to the domain, and register the environment to a workspace for AVD access.
 
    
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
