@@ -419,7 +419,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
 
       >**Note:** If there's a dialog box saying ***Stay signed in***, then select the **No** option.
 
-      ![](media/login1.png)
+      ![](media/g10.png)
 
 21. Click on the **Session Desktop** Desktop to launch it.
 

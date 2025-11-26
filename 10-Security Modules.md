@@ -19,7 +19,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
    
 1. If there is pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.  
 
-    ![](media-1/staysigned.png)
+    ![](media/g10.png)
     
 1. If you're automatically signed in using the **<inject key="AzureAdUserEmail" />**, proceed to the **Security info** page. Click on **+ Add sign-in method**.
 
