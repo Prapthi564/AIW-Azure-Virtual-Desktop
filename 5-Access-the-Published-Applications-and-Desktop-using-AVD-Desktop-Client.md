@@ -2,17 +2,25 @@
 
 ### Estimated Duration: 40 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso wants their AVD environment to be flexible in terms of accessing the sessions by their employees. You will help Contoso to test the access to the AVD session using the AVD Client application using your local computer.
 
-## **Overview**
 
-In this exercise, we will access the Desktop and RemoteApps assigned to us in the previous exercise using the AVD Desktop client.
+In this lab, we will access the Desktop and RemoteApps assigned to us in the previous exercise using the AVD Desktop client.
+
+## Lab objective
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Access the Published Applications
+- Exercise 2: Access the Virtual Desktop
 
 >#### **Note:** You have to perform this exercise in **Your Own PC/computer/workstation.** Do not perform this exercise within the JumpVM.
 
 ## Exercise 1: Access the Published Applications
+
+In this exercise, you will install and configure the Remote Desktop client on your local PC, subscribe to your AVD workspace using your lab credentials, access the published RemoteApp (Excel), verify successful application launch, and finally manage and sign out your active AVD session from the Azure Virtual Desktop portal.
 
 1. Open a browser in **Your Own PC/computer/workstation** (not within the JumpVM), copy and paste the following URL in that browser tab.
 
@@ -124,6 +132,8 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
    
 ## Exercise 2: Access the Virtual Desktop
 
+In this exercise, you will access the full AVD Session Desktop by updating the host pool settings, refreshing the Remote Desktop client, launching the virtual desktop, signing in with your credentials, and verifying successful desktop access.
+
 1. Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
 
    ![ws name.](media/avd-9.png)
@@ -154,8 +164,12 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in th
 
 1. Your virtual desktop will launch and look similar to the screenshot below. You can exit from the window by clicking on **X *i.e., the close button***. 
         
-   ![ws name.](./media/sessiondesktop1.1.png)   
+   ![ws name.](./media/sessiondesktop1.1.png) 
+
+## Summary
+
+In this lab, you installed and configured the Remote Desktop client on your local PC, subscribed to your AVD workspace, accessed the published RemoteApp (Excel), and managed your active session. You then updated the host pool settings to switch to a full desktop experience, launched the AVD Session Desktop through the Remote Desktop client, signed in with your lab credentials, and verified successful desktop access.
      
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
