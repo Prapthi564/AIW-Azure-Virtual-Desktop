@@ -131,11 +131,11 @@ In this task, you will through the process to understand the creation of a custo
 
    - Username: *Paste the username*  **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
 
-     ![ws name.](media/95.png)
+     ![ws name.](media/vd55.png)
    
    - Password: *Paste the password*  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
 
-      ![ws name.](media/96.png)
+      ![ws name.](media/vd6.png)
 
 1. Return to AVD client application. On the AVD dashboard, click on the tile named **Session Desktop** to launch the desktop.
 
