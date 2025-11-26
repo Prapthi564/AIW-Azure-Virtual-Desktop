@@ -20,6 +20,8 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Setup Multi-Factor Authentication (MFA)
 
+In this exercise, you will set up Multi-Factor Authentication (MFA) by signing in to the security verification page, adding Microsoft Authenticator as a sign-in method, configuring the app on your mobile device, scanning the QR code, and completing verification to successfully enable MFA for your account.
+
 1. In your JumpVM launch browser and visit `https://AKA.ms/proofup` and if asked to log in then log in using the following credentials:
 
    - Username: **<inject key="AzureAdUserEmail" />**
@@ -62,6 +64,8 @@ In this lab, you will complete the following exercises:
    ![](media/vd35.png)
   
 ## Exercise 2: Creating Conditional Access Policy
+
+In this exercise, you will create and configure a Conditional Access policy by disabling security defaults (if enabled), defining a new AVD-specific MFA policy, assigning your user and Azure Virtual Desktop as the target resource, enabling MFA as the required access control, and finally validating the policy by signing in through the Remote Desktop Web Client and completing MFA authentication.
 
 1. In Azure Portal search for **Microsoft Entra ID (1)** and click on it from the search result **(2)**.
 
@@ -160,6 +164,8 @@ In this lab, you will complete the following exercises:
     ![ws name.](media/ex4t2s2.png)
 
 ## Exercise 3: Screen Capture Protection
+
+In this exercise, you will enable and validate Screen Capture Protection for Azure Virtual Desktop by switching the host pool to a validation environment, connecting through the Remote Desktop client, installing and applying AVD Group Policy templates, configuring the Screen Capture Protection policy and registry settings, and finally confirming the feature by capturing a screenshot that shows the session desktop blacked out.
 
 1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the search result.
 
@@ -349,6 +355,8 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 4: App Locker
 
+In this exercise, you will enable and validate App Locker within the session host by starting the Application Identity service, configuring App Locker rule enforcement, creating a packaged app rule that blocks Microsoft Photos, and testing the policy by attempting to launch the Photos app to confirm it is successfully restricted.
+
 1. Within the same Session Desktop, from the Start menu search for **Services (1)** and select it from search results **(2)**.
 
    ![](./media/services1.png)
@@ -415,6 +423,10 @@ In this lab, you will complete the following exercises:
 
 1. Now you have successfully created an App Locker for all Apps in the Session desktop.
 
-Now, click on Next from the lower right corner to move on to the next page.
+## Summary
+
+In this lab, you enabled Multi-Factor Authentication, created a Conditional Access policy for secure AVD access, configured Screen Capture Protection to prevent screenshots, and implemented App Locker rules to restrict unauthorized applications, enhancing overall session security.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
