@@ -17,6 +17,8 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 ## Lab Objectives
 
+In this lab, you will complete the following exercises:
+
 - Exercise 1: Add new users to Microsoft Entra ID
 - Exercise 2: Update Passwords for the new users
 - Exercise 3: Change and experience Load Balancing methods

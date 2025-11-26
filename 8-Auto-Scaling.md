@@ -2,7 +2,9 @@
 
 ### Estimated Duration: 40 Minutes
 
-### Overview
+### Lab Scenario
+
+Contoso wants to optimize the cost and efficiency of their Azure Virtual Desktop environment. To achieve this, they need you to configure an Autoscale scaling plan for their host pool, defining schedules, load-balancing algorithms, and ramp-up/ramp-down rules to automatically scale session host VMs based on user demand.
 
 Azure Virtual Desktop uses Autoscale which let's scale your session virtual machines (VMs) in a host pool up or down to optimize deployment costs. You can create a scaling plan based on:
 
@@ -10,7 +12,16 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
    - Specific days of the week
    - Session limits per session host
 
+## Lab Objectives
+
+In this lab, you will complete the following exercise:
+
+- Exercise 1: Create a Scaling Plan
+- 
+
 ## Exercise 1: Create a Scaling Plan
+
+In this exercise, you will create an Azure Virtual Desktop scaling plan by first assigning the necessary custom role to manage autoscaling, then configuring schedules for ramp-up, peak, ramp-down, and off-peak hours, setting load-balancing algorithms, defining host capacity thresholds, and finally assigning the plan to the target host pool to automatically scale session host VMs based on demand.
 
 1. In the Azure Portal, search for **Subscriptions (1)** and select it from the search result **(2)**.
 
@@ -207,7 +218,11 @@ Azure Virtual Desktop uses Autoscale which let's scale your session virtual mach
 
 <validation step="521c23b6-77da-4da7-a165-8123e024e3fb" />
 
-Now, click on Next from the lower right corner to move on to the next page.
+## Summary
+
+In this lab, you created an Azure Virtual Desktop scaling plan by assigning the autoscale role, configuring schedules for ramp-up, peak, ramp-down, and off-peak hours, setting load-balancing algorithms and host capacity thresholds, and applied the plan to the host pool to automatically scale session host VMs based on demand.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
 
