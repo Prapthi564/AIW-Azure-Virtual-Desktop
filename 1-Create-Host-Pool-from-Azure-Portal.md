@@ -147,7 +147,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
 ## Summary
 
-In this lab, you create an Azure Virtual Desktop host pool using the Getting Started Wizard, configure session hosts, join them to the domain, and register the environment to a workspace for AVD access.
+In this lab, you created an Azure Virtual Desktop host pool using the Getting Started Wizard, configured session hosts, joined them to the domain, and registered the environment to a workspace for AVD access.
 
    
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
