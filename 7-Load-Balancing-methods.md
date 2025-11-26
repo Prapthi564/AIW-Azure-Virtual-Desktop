@@ -2,11 +2,9 @@
 
 ### Estimated Duration: 50 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso's AVD environment set-up is working smoothly. However, Contoso is confused about which load balancing to use in order to run the sessions efficiently. You will guide Contoso to explore different types of load balancing offered by Azure.
-
-## **Overview**
 
 Azure Virtual Desktop supports two load-balancing methods. Each method determines which session host will host a user's session when they connect to a resource in a host pool.
 While configuring a host pool, we can select load-balancing methods as per the needs.
@@ -16,6 +14,12 @@ The following load-balancing methods are available in Azure Virtual Desktop:
  **1. Breadth-first**: Breadth-first load balancing, distributes new user sessions across all available session hosts in the host pool. 
 
  **2. Depth-first**:  Depth-first load balancing, distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
+
+## Lab Objectives
+
+- Exercise 1: Add new users to Microsoft Entra ID
+- Exercise 2: Update Passwords for the new users
+- Exercise 3: Change and experience Load Balancing methods
 
 
 ## Exercise 1: Add new users to Microsoft Entra ID
@@ -93,7 +97,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 ## Exercise 2: Update Passwords for the new users
 
-Here, we will use Powershell to run a script that will change the passwords for the users created, as the user needs to reset the password after registering to AADDS. 
+Here, you will use Powershell to run a script that will change the passwords for the users created, as the user needs to reset the password after registering to AADDS. 
 
 1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
 
