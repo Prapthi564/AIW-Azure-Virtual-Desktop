@@ -7,7 +7,7 @@
 Contoso wants to provide employees with flexible access to their Azure Virtual Desktop environment. In this lab you will help Contoso test access to Azure Virtual Desktop sessions using a browser. 
 
 
-In this lab, we will access the Desktop and RemoteApps assigned to us in lab 3 using a browser. 
+In this lab, you will access the Desktop and RemoteApps assigned to us in lab 3 using a browser. 
 
 
 ## Lab Objectives
