@@ -133,7 +133,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
       - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-         ![ws name.](media/95.png)
+         ![ws name.](media/vd55.png)
 
       - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
@@ -185,7 +185,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
     - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-      ![ws name.](media/95.png)
+      ![ws name.](media/vd55.png)
 
     - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
