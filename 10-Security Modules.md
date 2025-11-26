@@ -13,7 +13,6 @@ In this lab, you will be enabling Multi-Factor authentication, Multi-factor auth
 In this lab, you will complete the following exercises:
 
 - Exercise 1: Setup Multi-Factor Authentication (MFA)
-
 - Exercise 2: Creating Conditional Access Policy
 - Exercise 3: Screen Capture Protection
 - Exercise 4: App Locker

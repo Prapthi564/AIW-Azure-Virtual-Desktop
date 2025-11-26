@@ -2,12 +2,22 @@
 
 ### Estimated Duration: 20 Minutes
 
-## **Overview**
+## Lab Scenario
 
-In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Virtual Desktop supports chat and collaboration. With media optimizations, it also supports calling and meeting functionality. With media optimization for Microsoft Teams, the Remote Desktop client handles audio and video locally for Teams calls and meetings.
+Contoso wants to enhance user experience and improve performance during virtual meetings. To achieve this, Contoso has decided to enable Multimedia Redirection (MMR) for Azure Virtual Desktop so that audio and video processing happens locally on the user's device. You will guide Contoso in configuring and validating Teams media optimizations on AVD.
+
+In this lab, you will be implementing MS Teams for AVD. Microsoft Teams on Azure Virtual Desktop supports chat and collaboration. With media optimizations, it also supports calling and meeting functionality. With media optimization for Microsoft Teams, the Remote Desktop client handles audio and video locally for Teams calls and meetings.
+
+## Lab Objectives
+
+In this lab, you will complete the following exercise:
+
+- Exercise 1: Multimedia redirection for Azure virtual desktop
 
 
 ## Exercise 1: Multimedia redirection for Azure virtual desktop
+
+In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virtual Desktop, validate Teams media optimization, and test audio/video redirection by launching a Teams meeting inside the AVD session.
 
 1. Navigate to the Azure portal, then search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the suggestions.
 
@@ -95,7 +105,11 @@ In this lab, We'll be implementing MS Teams for AVD. Microsoft Teams on Azure Vi
 
    ![](./media/camn.png)
 
-Now, click on Next from the lower right corner to move on to the next page.
+## Summary
+
+In this lab, you enabled multimedia redirection in Azure Virtual Desktop and validated it by launching Microsoft Teams inside the AVD session to test audio, video, and device redirection.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
 
