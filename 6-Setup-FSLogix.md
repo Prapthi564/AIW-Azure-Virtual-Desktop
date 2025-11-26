@@ -2,17 +2,24 @@
 
 ### Estimated Duration: 50 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso was getting complaints from the end-users stating that they were losing their User Profile when they connected to a different session host. Contoso wants to implement FSLogix which will help the end users to have separate storage containers for their user data and will help in maintaining consistency. You will help Contoso implement FSLogix in the Azure virtual desktop environment.
 
-## **Overview**
-
 The Azure Virtual Desktop service, recommends FSLogix profile containers as a user profile solution. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop. It stores a complete user profile in a single container. At sign-in, this container is dynamically attached to the computing environment using natively supported Virtual Hard Disk (VHD) and Hyper-V Virtual Hard disk (VHDX). The user profile is immediately available and appears in the system exactly like a native user profile. This article describes how FSLogix profile containers are used with the Azure Files function in Azure Virtual Desktop.
+
+## Lab objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Create Storage account and file share
+- Exercise 2: Configure File Share
+- Exercise 3: Configure Session Hosts
+- Exercise 4: Verifying the User profiles stored in File Share
 
 ## Exercise 1: Create Storage account and file share
 
-In the following task, we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
+In the exercsie, we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
 
 1. Navigate to the Azure portal, search for **Storage accounts** in the search bar, and select **Storage accounts** from the suggestions.
 
@@ -101,7 +108,7 @@ In the following task, we will be creating a storage account with a file share w
 
 ## Exercise 2: Configure File Share
 
-In this task, we will give *Storage File Data SMB Share Contributor* permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the file shares.
+In this exercise, we will give *Storage File Data SMB Share Contributor* permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the file shares.
 
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID (1)** in the search bar and select **Microsoft Entra ID (2)** from the suggestions.
    
@@ -184,7 +191,7 @@ In this task, we will give *Storage File Data SMB Share Contributor* permissions
 
 ## Exercise 3: Configure Session Hosts
 
-In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** session host using a Powershell script.
+In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0** session host using a Powershell script.
 
 1. In your Azure portal, search for **Virtual Machines** in the search bar and click on **Virtual Machines** from the suggestions.
 
@@ -452,7 +459,7 @@ In this task, we will install and configure FSLogix in the **AVD-HP01-SH-0** ses
    
 ## Exercise 4: Verifying the User profiles stored in File Share
 
-In this task, we will be accessing the file share to verify the user profiles stored in the *.vhd* format.
+In this exercise, we will be accessing the file share to verify the user profiles stored in the *.vhd* format.
 
 1. Return to the Azure Portal, search for **storage accounts** in the search bar and click on **Storage Accounts** from the suggestions.
 
@@ -492,7 +499,10 @@ In this task, we will be accessing the file share to verify the user profiles st
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="ad962332-47cc-4a42-899e-29bb55f5a4bd" />
 
+## Summary
 
-Now, click on Next from the lower right corner to move on to the next page.
+In this lab, you configured FSLogix profile containers for Azure Virtual Desktop by creating a storage account, enabling Entra Domain Services authentication, and setting up a profile file share. You then assigned appropriate access permissions, installed and configured FSLogix on the session hosts, updated AVD host pool settings, and verified successful roaming profile functionality across the virtual desktop environment.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 
