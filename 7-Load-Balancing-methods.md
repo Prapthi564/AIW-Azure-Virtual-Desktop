@@ -393,7 +393,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
 ## Summary
 
-
+In this lab, you added new users to Microsoft Entra ID, assigned them to FSLogix groups, and granted access to the appropriate AVD application groups. You then used PowerShell to reset their passwords for Azure AD DS login and explored Azure Virtual Desktop load-balancing methods, observing how Breadth-first and Depth-first algorithms distribute user sessions across hosts.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
