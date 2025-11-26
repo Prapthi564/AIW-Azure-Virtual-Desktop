@@ -24,6 +24,8 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 ## Exercise 1: Add new users to Microsoft Entra ID
 
+In this exercise, you will add new users to Microsoft Entra ID, assign them to the FSLogix permission group, and then assign the users to the appropriate Azure Virtual Desktop application group to grant access to published resources.
+
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID (1)** in the search bar and select **Microsoft Entra ID (2)** from the suggestions.
 
     ![ws name.](media/dev3.png)
@@ -97,7 +99,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 ## Exercise 2: Update Passwords for the new users
 
-Here, you will use Powershell to run a script that will change the passwords for the users created, as the user needs to reset the password after registering to AADDS. 
+In this exercise, you will use PowerShell to run a script that resets the passwords for the newly created users, ensuring they can log in successfully after registering with Azure AD DS.
 
 1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
 
@@ -388,6 +390,10 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 1. Click on **Users** and verify that both users have been assigned to the particular session host. 
 
       ![ws name.](media-2/users.png)
+
+## Summary
+
+
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
