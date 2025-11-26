@@ -2,15 +2,24 @@
 
 ### Estimated Duration: 50 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso wants its resources to be secure and protected from any kind of unethical activities. So Contoso wants to enable Multi-factor authentication (MFA) for session login. You will guide Contoso to set up MFA for sign-ins.
 
-## **Overview**
+In this lab, you will be enabling Multi-Factor authentication, Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, which increases the level of security.
 
-In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, which increases the level of security.
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Setup Multi-Factor Authentication (MFA)
+- Exercise 2: Creating Conditional Access Policy
+- Exercise 3: Screen Capture Protection
+- Exercise 4: App Locker
 
 ## Exercise 1: Setup Multi-Factor Authentication (MFA)
+
+In this exercise, you will set up Multi-Factor Authentication (MFA) by signing in to the security verification page, adding Microsoft Authenticator as a sign-in method, configuring the app on your mobile device, scanning the QR code, and completing verification to successfully enable MFA for your account.
 
 1. In your JumpVM launch browser and visit `https://AKA.ms/proofup` and if asked to log in then log in using the following credentials:
 
@@ -19,45 +28,43 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
    
 1. If there is pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.  
 
-    ![](media-1/staysigned.png)
+    ![](media/g10.png)
     
-1. On a prompt saying "Help us protect your account", click on **Next**.
-
-   ![](media/mfa-00.png)
-
-1. If you're automatically signed in using the **<inject key="AzureAdUserEmail" />**, proceed to the Security info page. Click on + Add sign-in method.
+1. If you're automatically signed in using the **<inject key="AzureAdUserEmail" />**, proceed to the **Security info** page. Click on **+ Add sign-in method**.
 
    ![](media/lab11-1.png)
 
-1. In the pop-up, choose Microsoft Authenticator and follow the on-screen steps to complete setup.
+1. In the pop-up, choose **Microsoft Authenticator** and follow the on-screen steps to complete setup.
 
    ![](media/lab11-2.png)
 
-1. Download the **Microsoft Authenticator** app on your Mobile from the App Store. After installing the app, select **Next**.
+1. Download the **Microsoft Authenticator** app on your Mobile from the App Store.
 
-   ![](media/lab11-3.png)
+1. After installing the app, select **Next**.
+
+   ![](media/vd31.png)
    
 1. In the Microsoft Authenticator app, set up your account by adding a work or school account. After adding an account select **Next**.
 
-   ![](media-1/EX10-task1-step5.png)
+   ![](media/vd32.png)
    
-1. To connect the Microsoft Authenticator app with your account **(1)**, **Scan the QR code (2)** and select **Next (3)**.
+1. To connect the Microsoft Authenticator app with your account, **Scan the QR code (1)** and select **Next (2)**.
 
-   ![](media-1/EX10-task1-step6.png)
+   ![](media/vd33.png)
 
 1. A Notification to Approve will pop up on your mobile. Enter the popped-up number in your mobile for verification.
    
-   ![](media-1/L10-E2-S7-1.png)
+   ![](media/vd34.png)
 
-1. Approve that and select **Next**.
-
-   ![](media-1/EX10-task1-step7.png)
-   
+1. Approve that.
+  
 1. Once Success! Great job! You have successfully set up your security info. Choose **Done** to continue signing in.
 
-   ![](media-1/EX10-task1-step8.png)
+   ![](media/vd35.png)
   
 ## Exercise 2: Creating Conditional Access Policy
+
+In this exercise, you will create and configure a Conditional Access policy by disabling security defaults (if enabled), defining a new AVD-specific MFA policy, assigning your user and Azure Virtual Desktop as the target resource, enabling MFA as the required access control, and finally validating the policy by signing in through the Remote Desktop Web Client and completing MFA authentication.
 
 1. In Azure Portal search for **Microsoft Entra ID (1)** and click on it from the search result **(2)**.
 
@@ -91,20 +98,19 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
    - Name: **AVD-MFA** **(1)**
    - **Assignments**:
-     - Click on **0 users and groups selected** **(2)** under Users option.
+     - Click on **0 users or agents selected** **(2)** under Users option.
      - A new window will slide in, click on **Select users and Groups** **(3)** and then select the check box saying **Users and groups** **(4)**
-     - Now a *Select* window will open, here search for ODL user and select it **(5)**
-     - Click on **Select** **(6)** button
+     - Now a *Select* window will open, here search for ODL user **<inject key="AzureAdUserEmail" />** then select it and then click on **Select** **(5)** button.
    
-         ![](media-1/L10E2S7.png)
+         ![](media-1/vd46.png)
    
       - Click on **No target resources selected** **(1)** under Target resources option.
       - Click on **Select Resources** **(2)**
-      - Click on **Select (3)**
+      - Click on **None (3)** under `Select specific resource`.
       - Search for **Azure Virtual Desktop** and click on the **check box** of **Azure Virtual Desktop** **(4)** next to the search result
       - Now Click on **Select** **(5)** button.
 
-         ![](media-1/L11E2S7.png)
+         ![](media-1/vd47.png)
 
            > **Note:** If you're unable to find any resource named Azure Virtual Desktop, try searching for **Windows Virtual Desktop**.
 
@@ -113,10 +119,10 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
       - Now in the Client Apps blade, toggle the *Configure* switch to **Yes** **(3)** and make sure that all the checkboxes below are selected.
       - Then click on **Done** **(4)**
 
-         ![](media-1/EX10-task2-step7c.png)
+         ![](media-1/vd48.png)
   
-      - Click on **0 controls selected of Grant Section** under the Access Control option.
-      - Click on **Grant** **(1)**
+      - Click on **0 controls selected (1)** of `Grant` Section under the Access Control option.
+      - Click on **Grant**
       - Select the Check Box saying **Require multi-factor authentication** **(2)** 
       - Then click on **Select** **(3)**
 
@@ -138,17 +144,17 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
       - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-         ![ws name.](media/95.png)
+         ![ws name.](media/vd55.png)
 
       - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-         ![ws name.](media/96.png)
+         ![ws name.](media/vd6.png)
    
 11. You'll see a dialog box to authenticate your login which is the indication of MFA implementation. Authenticate the login according to the authentication method you have chosen in exercise 1, step 7 to complete the verification.
 
      ![ws name.](media-1/EX10-task2-step11.png)
 
-     >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+     >**Note:** If there's a dialog box saying ***Stay signed in***, then select the **No** option.
 
      ![](media/login1.png)
    
@@ -158,7 +164,9 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
 ## Exercise 3: Screen Capture Protection
 
-1. Return to the Azure portal in your browser inside the **JumpVM**, search for *host pools* and click on **Host pools** from the search result.
+In this exercise, you will enable and validate Screen Capture Protection for Azure Virtual Desktop by switching the host pool to a validation environment, connecting through the Remote Desktop client, installing and applying AVD Group Policy templates, configuring the Screen Capture Protection policy and registry settings, and finally confirming the feature by capturing a screenshot that shows the session desktop blacked out.
+
+1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the search result.
 
    ![ws name.](media/lb38.png)
    
@@ -190,11 +198,11 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
     - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-      ![ws name.](media/95.png)
+      ![ws name.](media/vd55.png)
 
     - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-      ![ws name.](media/96.png)
+      ![ws name.](media/vd6.png)
       
       >**Note:** Once you enter the credentials, if there is an authentication request sent to the registered device, **Approve** it using the **Microsoft Authenticator App**
 
@@ -224,17 +232,21 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
    ![](media-1/selectedge.png)
 
-   Note: On the **Welcome to Microsoft Edge** page click on _Start without your data_. Then click on _Confirm and continue_ and then _Continue without data_. 
+1. On the **Welcome to Microsoft Edge** page, click on **Start without your data** -> Then click on **Confirm and continue** -> **Continue without google data** -> Then **Confirm and start browsing**. 
    
 1. Download the **Azure Virtual Desktop policy templates file** (AVDGPTemplate.cab) using the below URL.
 
    ```
    https://aka.ms/avdgpo
    ```
- 
-1. Navigate to the path **Downloads\AVDGPTemplate** (Double-click on **AVDGPTemplate** Cabinet file to see the zip file) and extract the **AVDGPTemplate** zip file to the default path.
 
-   ![](./media/extractfile.png)
+1. Once the file is downloaded, click on the **folder** icon to open the file.   
+
+   ![](./media/vd49.png)
+ 
+1. Double-click on **AVDGPTemplate** Cabinet file to see the zip file) and extract the **AVDGPTemplate** zip file to the default path.
+
+   ![](./media/vd50.png)
    
    ![](./media/extractdefault.png)
 
@@ -244,9 +256,9 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
    
 1. In the Select a Destination and Extract file pane, select **Exract**.
 
-   ![](./media/extract-s17.png)
+   ![](./media/vd51.png)
 
-1. Navigate to the path **C:\Users\ODL_User628391\Documents\AVDGPTemplate** and copy the **terminalserver-avd.admx** file to **C:\Windows\PolicyDefinitions** folder.
+1. Navigate to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate**, please replace `DID` in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy the **terminalserver-avd.admx** file to **C:\Windows\PolicyDefinitions** folder. 
 
    ![](media/admix1.png)
 
@@ -256,7 +268,7 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
    ![](./media/continue.png)
    
-1. Navigate back to the path **C:\Users\ODL_User628391\Documents\AVDGPTemplate\en-us** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
+1. Navigate back to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate\en-us**, please replace `DID` in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
 
    ![](media/adml1.png)
 
@@ -314,15 +326,19 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
      
 1. Restore the session host and take a screenshot using the Snipping tool from your Local desktop.
 
-    ![](./media/restoredown.png)
+    ![](./media/vd54.png)
 
 1. In **Your Own PC/computer/workstation**, go to Start Menu and search for **Snipping tool** then select it from search results.
 
     ![](./media/snippingtool1.png)
 
-1. Then in the **Snipping tool**, click on drop-down button next to **Mode** and select **Full-Screen Snip**.
+1. Then in the **Snipping tool**, click on drop-down button next to **Mode** and select **Full-Screen**.
 
-    ![](./media/fullscreen.png)
+    ![](./media/vd52.png)
+
+1. Click **+ New**.
+
+    ![](./media/vd53.png)
 
 1. You will get a screenshot with the Session desktop blacked out, the blacked-out screenshot as mentioned in the below screenshot.
 
@@ -337,6 +353,8 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 1. Now you have successfully enabled the Screen Capture Protection in your Session host.
 
 ## Exercise 4: App Locker
+
+In this exercise, you will enable and validate App Locker within the session host by starting the Application Identity service, configuring App Locker rule enforcement, creating a packaged app rule that blocks Microsoft Photos, and testing the policy by attempting to launch the Photos app to confirm it is successfully restricted.
 
 1. Within the same Session Desktop, from the Start menu search for **Services (1)** and select it from search results **(2)**.
 
@@ -404,6 +422,10 @@ In this lab, We'll be enabling Multi-Factor authentication, Multi-factor authent
 
 1. Now you have successfully created an App Locker for all Apps in the Session desktop.
 
-Now, click on Next from the lower right corner to move on to the next page.
+## Summary
+
+In this lab, you enabled Multi-Factor Authentication, created a Conditional Access policy for secure AVD access, configured Screen Capture Protection to prevent screenshots, and implemented App Locker rules to restrict unauthorized applications, enhancing overall session security.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
 
  ![Start Your Azure Journey](./media/Next.png) 

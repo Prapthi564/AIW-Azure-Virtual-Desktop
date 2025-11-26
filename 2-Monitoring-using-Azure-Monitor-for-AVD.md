@@ -2,15 +2,24 @@
 
 ### Estimated Duration: 30 Minutes
 
-## **Scenario**
+##  Lab Scenario
 
 Contoso is interested in setting up an operation center focused on monitoring the host pools, user access, and many more. You will help Contoso set up a monitoring solution with the help of features available in Azure virtual desktop and Azure monitoring resources. You will create a Log Analytics workspace and map it to the AVD environment using Azure Insights.
 
-## **Overview**
-
 Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many other Azure services. This lets admins identify issues through a single interface. The service creates activity logs for both user and administrative actions.
 
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Create Log Analytics
+- Exercise 2: Enable diagnostics for Workspace
+
+
+
 ## Exercise 1: Create Log Analytics
+
+In this exercise, you create a Log Analytics workspace by configuring basic settings, reviewing the deployment parameters, and deploying it to support monitoring for your AVD environment.
 
 1. In the search bar of the Azure portal, type **Log Analytics workspace (1)**. From the search results, select **Log Analytics workspace (2)**.
 
@@ -41,6 +50,8 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
    ![ws name.](media-1/Ex2-task1-step6.png)
 
 ## Exercise 2: Enable diagnostics for Workspace
+
+In this exercise, you enable diagnostics for the AVD workspace by configuring monitoring settings, deploying required templates, adding extensions and identities, and validating that all diagnostic components are correctly applied.
  
 1. On the **Azure portal** search for **Azure Virtual Desktop (1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the search results.
 
@@ -131,6 +142,10 @@ Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many oth
 <validation step="53c5dd73-f7c0-41ed-bd9a-9f6a03ef630a" />
    
    
+## Summary
+
+In this lab, you created a Log Analytics workspace and enabled diagnostics for the AVD environment by configuring monitoring, deploying diagnostic templates, adding required extensions and identities, and validating that all components are properly connected to Azure Monitor.
+
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
 
  

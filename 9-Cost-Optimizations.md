@@ -2,9 +2,20 @@
 
 ### Estimated Duration: 30 Minutes
 
-## **Overview**
+## Lab Scenario
 
-In this lab, We'll be enabling the Start Virtual Machine (VM) on Connect feature which lets you save costs by allowing users to turn on their VMs only when they need them.
+Contoso wants to reduce Azure Virtual Desktop (AVD) compute costs while maintaining on-demand availability for users. To achieve this, they require you to enable the Start VM on Connect feature. This involves creating and assigning a custom role that allows AVD to start session host VMs automatically, configuring the host pool to use this capability, and validating that stopped VMs power on when users launch their AVD session.
+
+In this lab, you will be enabling the Start Virtual Machine (VM) on Connect feature which lets you save costs by allowing users to turn on their VMs only when they need them.
+
+
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Enable Start Virtual Machine on Connect
+- Exercise 2: Configure the Start VM on Connect feature
+- Exercise 3: Experience VM start on connect
 
 ## Exercise 1: Enable Start Virtual Machine on Connect
 
@@ -80,6 +91,8 @@ In this task, you will through the process to understand the creation of a custo
 
 ### Task 1: Configuring Host Pool Properties
 
+In this task, you will navigate to the Azure Virtual Desktop host pool, enable the Start VM on Connect feature in the host pool properties, and save the configuration so that session host VMs automatically start when a user tries to connect.
+
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
    ![ws name.](media/2avd1.png)
@@ -99,6 +112,8 @@ In this task, you will through the process to understand the creation of a custo
 
 ### Task 1: Stop the Session host VMs
 
+In this task, you will stop the Azure Virtual Desktop session host VMs from the Azure portal by selecting the virtual machines and confirming the shutdown when prompted.
+
 1. In Azure Portal search for **Virtual Machines (1)** and select **Virtual Machines (2)**.
 
    ![](media/vd42.png)
@@ -112,6 +127,8 @@ In this task, you will through the process to understand the creation of a custo
    ![](media/vd44.png)
   
 ### Task 2: Access the Session host desktop
+
+In this task, you will unsubscribe and resubscribe to the AVD workspace using the correct user credentials, launch the Session Desktop from the Remote Desktop client, sign in to access the virtual desktop, and verify that the session host VMs automatically start when the desktop connection is initiated.
 
 1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
 
@@ -131,11 +148,11 @@ In this task, you will through the process to understand the creation of a custo
 
    - Username: *Paste the username*  **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
 
-     ![ws name.](media/95.png)
+     ![ws name.](media/vd55.png)
    
    - Password: *Paste the password*  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
 
-      ![ws name.](media/96.png)
+      ![ws name.](media/vd6.png)
 
 1. Return to AVD client application. On the AVD dashboard, click on the tile named **Session Desktop** to launch the desktop.
 
@@ -162,6 +179,9 @@ In this task, you will through the process to understand the creation of a custo
 
 <validation step="3d66b36a-91fa-42d5-8d17-f1e17b43a996" />   
    
+## Summary
+
+In this lab, you enabled the Start VM on Connect feature to optimize Azure Virtual Desktop costs by creating and assigning a custom role and configuring the host pool to allow automatic VM startup. You then stopped the session host VMs, launched the AVD Session Desktop to validate that the VMs power on when a user connects, confirming successful cost-efficient on-demand access.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 

@@ -2,11 +2,9 @@
 
 ### Estimated Duration: 50 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso's AVD environment set-up is working smoothly. However, Contoso is confused about which load balancing to use in order to run the sessions efficiently. You will guide Contoso to explore different types of load balancing offered by Azure.
-
-## **Overview**
 
 Azure Virtual Desktop supports two load-balancing methods. Each method determines which session host will host a user's session when they connect to a resource in a host pool.
 While configuring a host pool, we can select load-balancing methods as per the needs.
@@ -17,8 +15,18 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
  **2. Depth-first**:  Depth-first load balancing, distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
 
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Add new users to Microsoft Entra ID
+- Exercise 2: Update Passwords for the new users
+- Exercise 3: Change and experience Load Balancing methods
+
 
 ## Exercise 1: Add new users to Microsoft Entra ID
+
+In this exercise, you will add new users to Microsoft Entra ID, assign them to the FSLogix permission group, and then assign the users to the appropriate Azure Virtual Desktop application group to grant access to published resources.
 
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID (1)** in the search bar and select **Microsoft Entra ID (2)** from the suggestions.
 
@@ -93,7 +101,7 @@ The following load-balancing methods are available in Azure Virtual Desktop:
 
 ## Exercise 2: Update Passwords for the new users
 
-Here, we will use Powershell to run a script that will change the passwords for the users created, as the user needs to reset the password after registering to AADDS. 
+In this exercise, you will use PowerShell to run a script that resets the passwords for the newly created users, ensuring they can log in successfully after registering with Azure AD DS.
 
 1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
 
@@ -384,6 +392,10 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 1. Click on **Users** and verify that both users have been assigned to the particular session host. 
 
       ![ws name.](media-2/users.png)
+
+## Summary
+
+In this lab, you added new users to Microsoft Entra ID, assigned them to FSLogix groups, and granted access to the appropriate AVD application groups. You then used PowerShell to reset their passwords for Azure AD DS login and explored Azure Virtual Desktop load-balancing methods, observing how Breadth-first and Depth-first algorithms distribute user sessions across hosts.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 

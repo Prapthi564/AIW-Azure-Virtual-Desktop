@@ -2,20 +2,27 @@
 
 ### Estimated Duration: 30 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso wants to restrict access to the applications used by different teams in the organization. With Azure Virtual Desktop, admins can create unique application groups for users that require access to a specific set of applications. In this lab, you’ll help Contoso to configure and create an application group and add applications to it.
 
-## **Overview**
 
 As explained in the General Hierarchy section, an Application Group is a logical grouping of applications installed on session hosts in the host pool. There are two types of application groups: 
 
 1. RemoteApp 
 2. Desktop 
 
+## Lab objective
+
+In this lab, you will complete the following exercise:
+
+- Exercise 1: Create an Application Group
+
 ### Exercise 1: Create an Application Group
 
-An application group of type ‘Desktop’, was created automatically while creating the Session Host in the previous exercise. In this task, we will create a new application group of type ‘*RemoteApp*’ and publish two applications in it. Also, we will assign users to both application groups.
+An application group of type ‘Desktop’, was created automatically while creating the Session Host in the previous exercise. 
+
+In this exercsie, we will create a new application group of type ‘*RemoteApp*’ and publish two applications in it. Also, we will assign users to both application groups.
 
 1. Navigate to the Azure portal, Search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the search results.
 
@@ -138,6 +145,9 @@ An application group of type ‘Desktop’, was created automatically while crea
 
 <validation step="3816cf87-5d86-4cff-a599-63b4332838e5" />
    
+## Summary
+
+In this lab, you created a new RemoteApp application group, published applications such as Excel and Word, and assigned user access alongside the existing desktop application group for your AVD environment.
 
 Now, click on the **Next** button present in the bottom-right corner of this lab guide. 
 

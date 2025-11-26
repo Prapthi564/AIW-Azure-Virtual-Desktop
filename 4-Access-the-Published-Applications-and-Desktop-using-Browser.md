@@ -2,15 +2,24 @@
 
 ### Estimated Duration: 40 Minutes
 
-## **Scenario**
+## Lab Scenario
 
 Contoso wants to provide employees with flexible access to their Azure Virtual Desktop environment. In this lab you will help Contoso test access to Azure Virtual Desktop sessions using a browser. 
 
-## **Overview**
 
-In this exercise, we will access the Desktop and RemoteApps assigned to us in lab 3 using a browser. 
+In this lab, you will access the Desktop and RemoteApps assigned to us in lab 3 using a browser. 
+
+
+## Lab Objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Access the Published Application
+- Exercise 2: Access the published Desktop
 
 ## Exercise 1: Access the Published Application
+
+In this exercise, you will access the published RemoteApp application by configuring AVD settings, signing in through the Remote Desktop Web Client, and launching Word to verify successful application delivery.
 
 1.  Navigate to Azure portal, then search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
 
@@ -99,6 +108,8 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 
 ## Exercise 2: Access the published Desktop
 
+In this exercise, you will access the published AVD desktop by updating the host pool settings, launching the Session Desktop through the Remote Desktop Web Client, signing in with your lab credentials, and finally verifying and managing active user sessions from the Azure Virtual Desktop portal.
+
 1.  Navigate to Azure portal, then search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
 
     ![ws name.](media/avd-9.png)
@@ -150,6 +161,10 @@ In this exercise, we will access the Desktop and RemoteApps assigned to us in la
 1. Click on the **Refresh** button and make sure no results are displayed under the Host pool.
 
    ![ws name.](media-1/avd-45.png)
+
+## Summary
+
+In this lab, you accessed both the published RemoteApp and the full AVD desktop by configuring the host pool settings, launching resources through the Remote Desktop Web Client, signing in with your lab credentials, and managing active user sessions from the Azure Virtual Desktop portal.
 
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
 
