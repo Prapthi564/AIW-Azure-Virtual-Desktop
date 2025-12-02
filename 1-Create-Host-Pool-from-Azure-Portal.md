@@ -14,6 +14,37 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Create Host Pool using Getting Started Wizard
 
+### Lab prerequisites
+
+1. Navigate to `C:\LabFiles` in File explorer.
+
+   ![ws name.](media/au10.png)
+
+1. Right click on **PasswordReset (1)** file and then click **Edit (2)**.
+
+   ![ws name.](media/au11.png)
+
+1. Click on **Run** to execute the file.
+
+   ![ws name.](media/au12.png)
+
+1. When prompted, sign in with your username **<inject key="AzureAdUserEmail" />**.
+
+   ![ws name.](media/au13.png)
+
+1. Enter the **Temporary Access Pass**: **<inject key="AzureAdUserPassword" />**.
+
+   ![ws name.](media/au14.png)
+
+1. On the terminal:
+
+   - Enter the user UPN: **<inject key="AzureAdUserEmail" />**
+   - Enter new Password: **<inject key="AzureAdUserPassword" />**
+
+   - Please ensure that you see the message **Password reset successfully**.
+
+     ![ws name.](media/au15.png)
+
 ## Exercise 1: Create Host Pool using Getting Started Wizard
 
 In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
