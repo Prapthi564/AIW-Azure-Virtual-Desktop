@@ -16,7 +16,7 @@ In this lab, you will complete the following exercise:
 
 ### Lab prerequisites
 
-Follow the below steps to reset the **<inject key="AzureAdUserEmail" />** user's password to ensure that the user has secure and updated credentials for signing in. This sequence guarantees proper role-based access and account security before starting the lab.
+Follow the below steps to reset the **<inject key="AzureAdUserEmail" />** user's password to ensure that the user has secure and updated credentials for signing in. This sequence guarantees proper role-based access and account security before starting the lab. **Resetting the password is mandatory for the host pool deployment to succeed**.
 
 1. Navigate to `C:\LabFiles` in File explorer.
 
