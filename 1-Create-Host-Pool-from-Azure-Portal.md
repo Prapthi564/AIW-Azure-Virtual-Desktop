@@ -16,6 +16,8 @@ In this lab, you will complete the following exercise:
 
 ### Lab prerequisites
 
+Follow the below steps to reset the **<inject key="AzureAdUserEmail" />** user's password to ensure that the user has secure and updated credentials for signing in. This sequence guarantees proper role-based access and account security before starting the lab.
+
 1. Navigate to `C:\LabFiles` in File explorer.
 
    ![ws name.](media/au10.png)
@@ -44,6 +46,8 @@ In this lab, you will complete the following exercise:
    - Please ensure that you see the message **Password reset successfully**.
 
      ![ws name.](media/au15.png)
+
+1. Once the **Password reset successfully**, please proceed with the lab.     
 
 ## Exercise 1: Create Host Pool using Getting Started Wizard
 
